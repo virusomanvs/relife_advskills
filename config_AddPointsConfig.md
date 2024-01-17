@@ -9,13 +9,13 @@
 
 # Описание функций в моем коде
 
-## `GetAddPointsFromName(string pointConfigName)`
+## `GetAdvSkills().GetAddPointsFromName(string pointConfigName)`
 
-Функция возвращает значение типа `float` для указанного имени точки конфигурации.
+Функция возвращает значение типа `float` для указанного имени начисления опыта.
 
 ### Параметры:
 
-- **`pointConfigName`**: Строка, представляющая имя точки конфигурации.
+- **`pointConfigName`**: Строка, представляющая параметр.
 
 ### Возвращаемое значение:
 
@@ -25,11 +25,11 @@
 ### Пример использования:
 
 ```csharp
-float result = GetAddPointsFromName("examplePoint");
-// Результат может быть использован для дальнейших вычислений или операций.
+float result = GetAdvSkills().GetAddPointsFromName("CraftWhetstone");
+// Результат может быть использован для 
+```
 
-
-Пример:
+Пример конфигурации:
 
 ```json
 {
