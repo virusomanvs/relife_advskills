@@ -1,2 +1,3 @@
 # Список конфигов и описание параметров к ним
-[link text](https://www.google.com)
+[config_ActionCompletePoints.json](https://www.google.com)
+[config_AddPointsConfig.json](https://www.google.com)
