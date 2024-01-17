@@ -1,6 +1,25 @@
 - **`enableLogsProfile`**: 0- 1. Вкл. или выкл. ведение логов которые сохраняются по пути **profiles\LogArchives\relife_AdvSKills**
 - **`PointsName`**: Название очков опыта. Используется в отображении меню и уведомлениях.
 - **`SkillTypes`**: TStringArray массив со списком типов навыков. Только заглавные символы. Вывод в меню навыков выводится в том же порядке, как они указаны в конфиге.
+- **`SkillTypesList`**: Настройки для определенного типа навыка.
+
+```json
+{
+            "skillType": "HUNTING",
+            "skillTypeTitle": "#STR_RLF_SKILL_HUNTING",
+            "skillTypeNotifyIcon": "relife_AdvSkills/gui/images/hunting.edds",
+            "skillTypeMenuIcon": "relife_AdvSkills/gui/imagesets/top_menu/hunter.edds",
+            "SkillStartedPoints": 0.0,
+            "PointsDecreaseAfterDeath": 0.0
+}
+```
+- **`skillType`**: string Имя навыка, которое определено в параметре **SkillTypes**
+- **`skillTypeTitle`**: string  Название навыка для отображения в меню и уведомлениях.
+- **`skillTypeNotifyIcon`**: string Полный путь к иконке формата **.edds** для отображения в уведомлениях.
+- **`skillTypeMenuIcon`**: string Полный путь к иконке формата **.edds** для отображения в меню.
+- **`SkillStartedPoints`**: float Количество очков на старте игрока или при смерти (в соответствии с настройками смерти).
+- **`PointsDecreaseAfterDeath`**: float Значение от 0.0 до 1.0 на сколько снизится кол-во опыта данного типа при смерти.
+
 
 ```json
 {
