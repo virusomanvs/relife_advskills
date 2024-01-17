@@ -1,4 +1,6 @@
-- **`enableLogsProfile`**: Вкл. или выкл. ведение логов которые сохраняются по пути **profiles\LogArchives\relife_AdvSKills**
+- **`enableLogsProfile`**: 0- 1. Вкл. или выкл. ведение логов которые сохраняются по пути **profiles\LogArchives\relife_AdvSKills**
+- **`PointsName`**: Название очков опыта. Используется в отображении меню и уведомлениях.
+- **`SkillTypes`**: TStringArray массив со списком типов навыков. При добавлении нового типа навыка, необходимо заполнить также и параметры для него **SkillTypesList**, **SkillTypesNotifyIcons**, **SkillTypesMenuIcons**, **SkillStartedPoints**, **PointsDecreaseAfterDeath**.
 
 ```json
 {
