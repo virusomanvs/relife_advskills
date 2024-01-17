@@ -206,10 +206,9 @@
     ],
 }
 ```
-
+- **`FishignSeaFishTypes`**: Список морской рыбы
 ```json
-    "FishingSeaFishTypes": [
-        {
+    {
             "itemFishID": 0,
             "className": "Mackerel",
             "chanceToCatch": 0.5,
@@ -234,36 +233,36 @@
                 }
             ]
         }
-    ],
-    "FishingPondFishTypes": [
-        {
-            "itemFishID": 0,
-            "className": "Carp",
-            "chanceToCatch": 0.5,
-            "skillPointsForCatch": 1.0,
-            "randomQuantity": 0,
-            "setQuantityPerc": 0.5,
-            "quantRandMinPerc": 0.10000000149011612,
-            "quantRandMaxPerc": 0.800000011920929,
-            "perkCoefEnable": 1,
-            "difficultCatch": [
-                1.0,
-                1.0
-            ],
-            "perkCoefList": []
-        }
-    ],
-    "FishingGoodItemTypes": [],
-    "FishingTrashItemTypes": [],
-    "FishingGarbageItemsTypes": [],
-    "FishingGoodItemsTypes": [],
-    "PlantTypeList": [],
-    "RecipePoint": [],
-    "BlockCraftLists": [],
-    "ActionFinnishPoint": {},
-    "WeaponList": [],
-    "ReadBookPoint": {},
-    "EntityList": {},
-    "SkillPerks": []
-}
 ```
+- **`className`**: `string` classname рыбы
+- **`chanceToCatch`**: `float` Шанс на выбор из списка. То есть когда сработает шанс на поимку, будет выбираться шанс на ту рыбу которую вы поймали. Вы можете вносить рыбу в массив в любом порядке шансов, при выборе, скрипт перемешает всю рыбу в массиве и шансы будут выбираться более правильно. 0.5 это 50%.
+- **`skillPointsForCatch`**: `float` Начисляемый опыт за поимку рыбы
+- **`randomQuantity`**: `bool` Включить рандомное качество в процентах пойманной рыбы, если выключено будут использоваться настройки **setQuantityPerc** также в процентах от 0 до 1
+- **`randomQuantity`**: `float` Количество пойманой рыбы в процентах от 0 до 1
+- **`quantRandMinPerc`**: `float` Минимум рандомное число для **randomQuantity**
+- **`quantRandMaxPerc`**: `float` Максимум рандомное число для **randomQuantity**
+- **`perkCoefEnable`**: `bool` Включить зависимость от перков которые указаны в массиве **perkCoefList**
+
+```json
+{
+  "perkCoefList": [
+           {
+                    "enableCoef": 1,
+                    "perkID": 38,
+                    "randomQuantity": 0,
+                    "setQuantityPerc": -1.0,
+                    "quantRandMinPerc": 0.10000000149011612,
+                    "quantRandMaxPerc": 0.800000011920929
+                }
+            ]
+  }
+```
+- **`enableCoef`**: `bool` Включить отдельно
+- **`perkID`**: `int` ID перка при активации которого будет учитываться эта настройка
+- **`randomQuantity`**: `bool` Включить рандомное качество в процентах пойманной рыбы, если выключено будут использоваться настройки **setQuantityPerc** также в процентах от 0 до 1
+- **`setQuantityPerc`**: `float` Количество пойманой рыбы в процентах от 0 до 1
+- **`quantRandMinPerc`**: `float` Минимум рандомное число для **randomQuantity**
+- **`quantRandMaxPerc`**: `float` Максимум рандомное число для **randomQuantity**
+  
+- **`FishignSeaFishTypes`**: Список рыбы из пруда. Настройки такие же как и у морской рыбы.
+
