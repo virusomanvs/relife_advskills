@@ -18,8 +18,8 @@
 ### Пример использования:
 
 ```csharp
-float result = GetAdvSkills().GetAddPointsFromName("CraftWhetstone");
-// Результат может быть использован для 
+float result = GetAdvSkills().GetAddPointsFromName("PlayerKilled");
+// Вернется значение 15.0 
 ```
 
 Пример конфигурации:
