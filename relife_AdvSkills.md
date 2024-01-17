@@ -64,7 +64,10 @@
 - **`IgnoreDeathPerkPlayers`**: `TStringArray` массив строк STEAMID для игнорирования сброса перков. При наличии STEAMID игрока, на него не будут распространяться никакие настройки сброса перков или опыта.
 ```json
 {
-"IgnoreDeathPerkPlayers": [],
+     "IgnoreDeathPerkPlayers": [
+        "steamid1",
+        "steamid2"
+     ],
 }
 ```
 ```json
