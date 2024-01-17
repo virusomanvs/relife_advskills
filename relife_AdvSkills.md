@@ -70,80 +70,70 @@
      ],
 }
 ```
+## Настройка вырезания гнили в продуктах
+- **`BadEatPrepareTool`**: `TStringArray` массив с класснеймом предметов с помощью которых можно будет вырезать гниль из продуктов.
 ```json
 {
-    "IgnoreDeathPerkPlayers": [],
-    "desc11": "[][][][_PERK ROTTEN EAT SETTINGS_][][][]",
     "BadEatPrepareTool": [
         "Sickle",
         "KukriKnife",
         "FangeKnife",
         "Hacksaw",
-        "HandSaw",
-        "KitchenKnife",
-        "SteakKnife",
-        "StoneKnife",
-        "Cleaver",
-        "CombatKnife",
-        "Machete",
-        "CrudeMachete",
-        "OrientalMachete",
-        "WoodAxe",
-        "Hatchet",
-        "FirefighterAxe",
-        "Sword",
-        "AK_Bayonet",
-        "M9A1_Bayonet",
-        "Mosin_Bayonet",
-        "SKS_Bayonet",
-        "BoneKnife"
-    ],
+    ]
+}
+```
+- **`BadEatPrepareMeat`**: `TStringArray` массив с класснеймом мяса в котором можно будет вырезать гниль.
+```json
+{
     "BadEatPrepareMeat": [
-        "CowSteakMeat",
+       "CowSteakMeat",
         "SheepSteakMeat",
         "GoatSteakMeat",
         "MouflonSteakMeat",
-        "BoarSteakMeat",
-        "PigSteakMeat",
-        "DeerSteakMeat",
-        "WolfSteakMeat",
-        "BearSteakMeat",
-        "ChickenBreastMeat",
-        "Kit_FoxSteakMeat",
-        "Kit_RabbitLegMeat"
-    ],
+        "BoarSteakMeat"
+    ]
+}
+```
+- **`BadEatPrepareFish`**: `TStringArray` массив с класснеймом рыбы в которой можно будет вырезать гниль.
+```json
+{
     "BadEatPrepareFish": [
         "CarpFilletMeat",
         "MackerelFilletMeat"
-    ],
+    ]
+}
+```
+- **`BadEatPrepareFruit`**: `TStringArray` массив с класснеймом фруктов, овощей или грибов в которых можно будет вырезать гниль.
+```json
+{
     "BadEatPrepareFruit": [
-        "Apple",
+         "Apple",
         "Plum",
         "Pear",
-        "SambucusBerry",
-        "CaninaBerry",
-        "Banana",
-        "Orange",
-        "Tomato",
-        "GreenBellPepper",
-        "Zucchini",
-        "Pumpkin",
-        "SlicedPumpkin",
-        "Potato",
-        "Kiwi",
-        "MushroomBase"
-    ],
-    "desc8": "[][][][_PERK CATEYE SETTINGS_][][][]",
-    "cateyesValue": [
+    ]
+}
+```
+## Настройки для перка `Кошачьи глазки`
+- **`BadEatPrepareFruit`**: `TFloatArray` массив с настройками уровней перка `Кошачьи глазки`. Начиная с 0 по 4 уровень.
+```json
+{
+   "cateyesValue": [
         1.5,
         2.5,
         3.5,
         4.199999809265137
     ],
-    "hour_start": 20,
-    "min_start": 30,
-    "hour_end": 4,
-    "min_end": 30,
+}
+```
+- **`hour_start`**: `int` Время в часах для активации перка.
+- **`min_start`**: `int` Время в минутах для активации перка.
+- **`hour_end`**: `int` Время в часах для деактивации перка.
+- **`min_end`**: `int` Время в минутах для деактивации перка.
+
+### ==============================
+
+```json
+
     "desc85": "[][][][_GARDENING SETTINGS_][][][]",
     "ShakeForFruitChance": 0.15000000596046449,
     "ShakeForFruitChancePerkPlusOne": 0.5,
