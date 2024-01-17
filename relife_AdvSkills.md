@@ -51,35 +51,19 @@
         "SewingKitCoefLvl3": 0.699999988079071
     },
 ```
+## Настройка сброса перков и опыта в случае смерти игрока
 
+- **`CLEARPERKAFTERDEATH`**: `bool` Включить/выключить сброс перков при смерти игрока
+- **`ClearPlayerPerkUsingPenalty`**: `bool` Включить сброс перков при достижении определенного количества смертей
+- **`PlayerCountDeathToPenalty`**: `int` Количество смертей при достижении которых сброятся перки
+- **`clearPlayersPoints`**: `bool` Включить/выключить сброс опыта при смерти игрока
+- **`enableDeacreasePoints`**: `bool` Включить/выключить сброс опыта на определенный процент указанный в типе навыка при смерти игрока
+- **`clearPerkUsingChance`**: `bool` Сброс перков используя их внутренний шанс сброса **chanceToClear** 
+- **`clearPerkUsingRandom`**: `bool` Сброс случайных перков в количестве указанном в **clearPerkUsingRandom_count**. Зависимые перки также будут сброшены по цепочке.
+- **`clearPerkUsingRandom_count`**: `int` Количество сбрасываемых перков в случае если **clearPerkUsingRandom** равен `true`.
+- 
 ```json
 {
-    "RepairKitPerkConfig": {
-        "WeaponCleaningKitLvl1": 0.8999999761581421,
-        "TireRepairKitLvl1": 0.8999999761581421,
-        "TireRepairKitLvl2": 0.800000011920929,
-        "TireRepairKitLvl3": 0.699999988079071,
-        "ElectronicRepairKitLvl1": 0.8999999761581421,
-        "ElectronicRepairKitLvl2": 0.8500000238418579,
-        "ElectronicRepairKitLvl3": 0.699999988079071,
-        "WeaponCleaningKitLvl3": 0.699999988079071,
-        "LeatherSewingKitLvl1": 0.8999999761581421,
-        "LeatherSewingKitLvl2": 0.8500000238418579,
-        "LeatherSewingKitLvl3": 0.699999988079071,
-        "EpoxyPuttyLvl1": 0.8999999761581421,
-        "EpoxyPuttyLvl2": 0.8500000238418579,
-        "EpoxyPuttyLvl3": 0.699999988079071,
-        "WeaponCleaningKitLvl2": 0.800000011920929,
-        "SewingKitCoefLvl1": 0.8999999761581421,
-        "SewingKitCoefLvl2": 0.8500000238418579,
-        "SewingKitCoefLvl3": 0.699999988079071
-    },
-    "desc823": "[][][][_DEATH SETTINGS_][][][]",
-    "CLEARPERKAFTERDEATH": 1,
-    "ClearPlayerPerkUsingPenalty": 0,
-    "PlayerCountDeathToPenalty": 5,
-    "clearPlayersPoints": 1,
-    "enableDeacreasePoints": 0,
     "clearPerkUsingChance": 0,
     "clearPerkUsingRandom": 0,
     "clearPerkUsingRandom_count": 5,
