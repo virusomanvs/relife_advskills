@@ -1,3 +1,4 @@
+```json
 {
     "ConfigVersion": "1",
     "PerkVersion": "28",
@@ -288,3 +289,4 @@
     "EntityList": {},
     "SkillPerks": []
 }
+```
