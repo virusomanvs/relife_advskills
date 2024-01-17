@@ -13,7 +13,7 @@
             "PointsDecreaseAfterDeath": 0.0
 }
 ```
-- **`skillType`**: string Имя навыка, которое определено в параметре **SkillTypes**
+- **`skillType`**: `string` Имя навыка, которое определено в параметре **SkillTypes**
 - **`skillTypeTitle`**: string  Название навыка для отображения в меню и уведомлениях.
 - **`skillTypeNotifyIcon`**: string Полный путь к иконке формата **.edds** для отображения в уведомлениях.
 - **`skillTypeMenuIcon`**: string Полный путь к иконке формата **.edds** для отображения в меню.
