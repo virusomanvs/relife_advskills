@@ -21,76 +21,39 @@
 - **`skillTypeNotifyIcon`**: `string` Полный путь к иконке формата **.edds** для отображения в уведомлениях.
 - **`skillTypeMenuIcon`**: `string` Полный путь к иконке формата **.edds** для отображения в меню.
 - **`SkillStartedPoints`**: `float` Количество очков на старте игрока или при смерти (в соответствии с настройками смерти).
-- **`PointsDecreaseAfterDeath`**:  `float` Значение от 0.0 до 1.0 на сколько снизится кол-во опыта данного типа при смерти.
+- **`PointsDecreaseAfterDeath`**:  `float` Значение от 0.0 до 1.0 на сколько в процентах снизится кол-во опыта данного типа при смерти.
+  
+### ==============================
 
+- **`StartingPointsForAll`**:  `float` Стартовое значения опыта, если в параметрах типа навыка не указано начальное значение.
+- **`PointsDecreaseAfterDeathForAll`**:  `float` Значение от 0.0 до 1.0 на сколько в процентах уменьшится опыт, если в параметрах типа навыка не указано начальное значение.
+
+## Настройка расхода инструментов для перков по их экономии
+```json
+    "RepairKitPerkConfig": {
+        "WeaponCleaningKitLvl1": 0.8999999761581421,
+        "TireRepairKitLvl1": 0.8999999761581421,
+        "TireRepairKitLvl2": 0.800000011920929,
+        "TireRepairKitLvl3": 0.699999988079071,
+        "ElectronicRepairKitLvl1": 0.8999999761581421,
+        "ElectronicRepairKitLvl2": 0.8500000238418579,
+        "ElectronicRepairKitLvl3": 0.699999988079071,
+        "WeaponCleaningKitLvl3": 0.699999988079071,
+        "LeatherSewingKitLvl1": 0.8999999761581421,
+        "LeatherSewingKitLvl2": 0.8500000238418579,
+        "LeatherSewingKitLvl3": 0.699999988079071,
+        "EpoxyPuttyLvl1": 0.8999999761581421,
+        "EpoxyPuttyLvl2": 0.8500000238418579,
+        "EpoxyPuttyLvl3": 0.699999988079071,
+        "WeaponCleaningKitLvl2": 0.800000011920929,
+        "SewingKitCoefLvl1": 0.8999999761581421,
+        "SewingKitCoefLvl2": 0.8500000238418579,
+        "SewingKitCoefLvl3": 0.699999988079071
+    },
+```
 
 ```json
 {
-    "ConfigVersion": "1",
-    "PerkVersion": "28",
-    "desc9": "[][][][_MAIN SETTINGS_][][][]",
-    "enableLogsProfile": 0,
-    "PointsName": "XP",
-    "SkillTypes": [
-        "HUNTING",
-        "FISHING",
-        "GARDENING",
-        "MEDICAL",
-        "ENGINEERING",
-        "ENDURANCE"
-    ],
-    "SkillTypesList": [
-        {
-            "skillType": "HUNTING",
-            "skillTypeTitle": "#STR_RLF_SKILL_HUNTING",
-            "skillTypeNotifyIcon": "relife_AdvSkills/gui/images/hunting.edds",
-            "skillTypeMenuIcon": "relife_AdvSkills/gui/imagesets/top_menu/hunter.edds",
-            "SkillStartedPoints": 0.0,
-            "PointsDecreaseAfterDeath": 0.0
-        },
-        {
-            "skillType": "FISHING",
-            "skillTypeTitle": "#STR_RLF_SKILL_FISHING",
-            "skillTypeNotifyIcon": "relife_AdvSkills/gui/images/fishing.edds",
-            "skillTypeMenuIcon": "relife_AdvSkills/gui/imagesets/top_menu/fishing.edds",
-            "SkillStartedPoints": 0.0,
-            "PointsDecreaseAfterDeath": 0.0
-        },
-        {
-            "skillType": "GARDENING",
-            "skillTypeTitle": "#STR_RLF_SKILL_GARDENING",
-            "skillTypeNotifyIcon": "relife_AdvSkills/gui/images/gardening.edds",
-            "skillTypeMenuIcon": "relife_AdvSkills/gui/imagesets/top_menu/gardening.edds",
-            "SkillStartedPoints": 0.0,
-            "PointsDecreaseAfterDeath": 0.0
-        },
-        {
-            "skillType": "MEDICAL",
-            "skillTypeTitle": "#STR_RLF_SKILL_MEDICAL",
-            "skillTypeNotifyIcon": "relife_AdvSkills/gui/images/medical.edds",
-            "skillTypeMenuIcon": "relife_AdvSkills/gui/imagesets/top_menu/medic.edds",
-            "SkillStartedPoints": 0.0,
-            "PointsDecreaseAfterDeath": 0.0
-        },
-        {
-            "skillType": "ENGINEERING",
-            "skillTypeTitle": "#STR_RLF_SKILL_ENGINEERING",
-            "skillTypeNotifyIcon": "relife_AdvSkills/gui/images/engineering.edds",
-            "skillTypeMenuIcon": "relife_AdvSkills/gui/imagesets/top_menu/engi.edds",
-            "SkillStartedPoints": 0.0,
-            "PointsDecreaseAfterDeath": 0.0
-        },
-        {
-            "skillType": "ENDURANCE",
-            "skillTypeTitle": "#STR_RLF_SKILL_ENDURANCE",
-            "skillTypeNotifyIcon": "relife_AdvSkills/gui/images/endurance.edds",
-            "skillTypeMenuIcon": "relife_AdvSkills/gui/imagesets/top_menu/power.edds",
-            "SkillStartedPoints": 0.0,
-            "PointsDecreaseAfterDeath": 0.0
-        }
-    ],
-    "StartingPointsForAll": 0.0,
-    "PointsDecreaseAfterDeathForAll": 0.0,
     "RepairKitPerkConfig": {
         "WeaponCleaningKitLvl1": 0.8999999761581421,
         "TireRepairKitLvl1": 0.8999999761581421,
