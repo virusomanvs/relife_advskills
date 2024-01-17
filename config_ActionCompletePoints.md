@@ -1,11 +1,8 @@
-# Описание переменных в моем JSON-конфиге
-
-Ваш JSON-конфиг содержит следующие переменные для действий:
-
-## `ActionChickenBreak`
+# Описание переменных в конфиге config_ActionCompletePoints.json
 
 Описание действия `ActionChickenBreak`.
 
+- **`ActionChickenBreak`**: Класснейм действия.
 - **`skillPoints`**: Значение навыка - 0.5.
 - **`typeOfSkill`**: Тип навыка - "HUNTING".
 - **`showNotify`**: Флаг для отображения уведомлений - 1.
