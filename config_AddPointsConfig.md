@@ -7,6 +7,8 @@
 - **`typeOfSkill`**: Тип навыка.
 - **`showNotify`**: Флаг для отображения уведомлений - 1 или 0.
 
+## `performActionChickenBreak()`
+
 Пример:
 
 ```json
