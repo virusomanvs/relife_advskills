@@ -146,9 +146,11 @@
         0.6000000238418579,
         0.5
     ],
+}
 ```
 - **`StaminaPercentRecovery`**: `float` Увеличение скорости восстановления выносливости от 5 перка к 1.
 ```json
+{
     "StaminaPercentRecovery": [
         1.100000023841858,
         1.2000000476837159,
@@ -156,9 +158,11 @@
         1.399999976158142,
         1.5
     ],
+}
 ```
 - **`WeightPercentDecrease`**: `float` Увеличение переносимого веса от 5 перка к 1.
 ```json
+{
     "WeightPercentDecrease": [
         0.8999999761581421,
         0.800000011920929,
@@ -168,54 +172,42 @@
     ],
 }
 ```
+
+### ==============================
+
+- **`ItemSkinningInPercent`**: `bool` Включает использование процентов при разделке животных, для настройки состояния мяса. Если выключено, то настройки состояния должны быть в фактическом количестве.
+
+## Настройки перков рыбалки
+- **`FishingHookLoss_Default`**: `float` Шанс потери наживки без перка.
+- **`FishingHookLoss_OnHookPerk_`**: `float` Шансы потери наживки при перках.
+- **`FishchanceToCatchSea_Default`**: `float` Шанс поимки в море по умолчнанию.
+- **`FishchanceToCatchSea_OnFishingPerk_`**: `float` Шанс поимки в море при перках.
+- **`FishchanceToCatchPond_Default`**: `float` Шанс поимки в озере по умолчнанию.
+- **`FishchanceToCatchPond_OnFishingPerk_`**: `float` Шанс поимки в озере при перках.
+- **`FishingGarbageChance_Default`**: `float` Шанс поймать плохую вещь.
+- **`FishingGarbageChance_OnFishingLuckyPerk_`**: `float` Шанс поймать плохую вещь при перках.
+- **`GoodFishingRodBonus`**: `float` + процент ловле при удочках указанных в параметре **FishingGoodRodTypes**
+- **`IsNightBonus`**: `float` Бонус к рыбалке ночью +10%
+- **`FishingRainBonus`**: `float` Бонус к рыбалке в дождь +10%
+- **`GoodFishingClothesBonus`**: `float` Бонус к рыбалке при ловле в определеной вещи на голове (панамка рыбака) указанной в **FishingGoodRodTypes**
+- **`FishingGoodClothesTypes`**: `TStringArray` Список вещей на голове которые дают бонус к рыбалке.
 ```json
-    "desc7": "[][][][_OTHER SETTINGS_][][][]",
-    "ItemSkinningInPercent": 1,
-    "WellMinWater": 1100,
-    "WellMaxWater": 6500,
-    "desc0": "[][][][_FISHING SETTINGS_][][][]",
-    "BushBugSearchChance": 0.25,
-    "BushBugSearchChancePerk": 0.4000000059604645,
-    "ChanceToCatchDragonFly": 0.20000000298023225,
-    "TreeDeadBugSearchChance": 0.44999998807907107,
-    "TreeBugSearchChance": 0.25,
-    "ChanceToCatchFrog": 0.07999999821186066,
-    "FrogCatchQuantityMinMax": [
-        0.6499999761581421,
-        1.0
+{
+    "FishingGoodClothesTypes": [
+        "BonieHat_ColorBase"
     ],
-    "FrogCatchHealthMinMax": [
-        0.6499999761581421,
-        1.0
-    ],
-    "FishingRepeatChance": 0.3499999940395355,
-    "FishingLostFishChance": 0.10000000149011612,
-    "FishingHookLoss_Default": 0.5,
-    "FishingHookLoss_OnHookPerk_1": 0.3499999940395355,
-    "FishingHookLoss_OnHookPerk_2": 0.25,
-    "FishingHookLoss_OnHookPerk_3": 0.10000000149011612,
-    "FishingItemChance_Default": 0.3499999940395355,
-    "FishchanceToCatchSea_Default": 0.10000000149011612,
-    "FishchanceToCatchSea_OnFishingPerk_1": 0.20000000298023225,
-    "FishchanceToCatchSea_OnFishingPerk_2": 0.30000001192092898,
-    "FishchanceToCatchSea_OnFishingPerk_3": 0.4000000059604645,
-    "FishchanceToCatchPond_Default": 0.10000000149011612,
-    "FishchanceToCatchPond_OnFishingPerk_1": 0.20000000298023225,
-    "FishchanceToCatchPond_OnFishingPerk_2": 0.30000001192092898,
-    "FishchanceToCatchPond_OnFishingPerk_3": 0.4000000059604645,
-    "FishingGarbageChance_Default": 0.800000011920929,
-    "FishingGarbageChance_OnFishingLuckyPerk_1": 0.699999988079071,
-    "FishingGarbageChance_OnFishingLuckyPerk_2": 0.6000000238418579,
-    "FishingGarbageChance_OnFishingLuckyPerk_3": 0.5,
-    "GoodFishingRodBonus": 0.10000000149011612,
-    "IsNightBonus": 0.10000000149011612,
-    "FishingRainBonus": 0.10000000149011612,
-    "FishingModifier": 1.0,
-    "GoodFishingClothesBonus": 0.05000000074505806,
+}
+```
+- **`FishingGoodRodTypes`**: `TStringArray` Список удочек которые дают бонус к рыбалке.
+```json
+{
     "FishingGoodRodTypes": [
         "FishingRod"
     ],
-    "FishingGoodClothesTypes": [],
+}
+```
+
+```json
     "FishingSeaFishTypes": [
         {
             "itemFishID": 0,
