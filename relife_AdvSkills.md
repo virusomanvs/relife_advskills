@@ -4,14 +4,16 @@
 - **`SkillTypesList`**: Настройки для определенного типа навыка.
 
 ```json
+ "SkillTypesList": [
 {
-            "skillType": "HUNTING",
-            "skillTypeTitle": "#STR_RLF_SKILL_HUNTING",
-            "skillTypeNotifyIcon": "relife_AdvSkills/gui/images/hunting.edds",
-            "skillTypeMenuIcon": "relife_AdvSkills/gui/imagesets/top_menu/hunter.edds",
-            "SkillStartedPoints": 0.0,
-            "PointsDecreaseAfterDeath": 0.0
+"skillType": "HUNTING",
+"skillTypeTitle": "#STR_RLF_SKILL_HUNTING",
+"skillTypeNotifyIcon": "relife_AdvSkills/gui/images/hunting.edds",
+"skillTypeMenuIcon": "relife_AdvSkills/gui/imagesets/top_menu/hunter.edds",
+"SkillStartedPoints": 0.0,
+"PointsDecreaseAfterDeath": 0.0
 }
+]
 ```
 - **`skillType`**: `string` Имя навыка, которое определено в параметре **SkillTypes**
 - **`skillTypeTitle`**: `string`  Название навыка для отображения в меню и уведомлениях.
