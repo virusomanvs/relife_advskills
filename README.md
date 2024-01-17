@@ -1,3 +1,2 @@
-# links
-
-[[link text](https://github.com/virusomanvs/relife_advskills/blob/main/config_ActionCompletePoints.md)]
+# Список конфигов и описание параметров к ним
+[link text](https://www.google.com)
