@@ -1,6 +1,6 @@
 - **`enableLogsProfile`**: 0- 1. Вкл. или выкл. ведение логов которые сохраняются по пути **profiles\LogArchives\relife_AdvSKills**
 - **`PointsName`**: Название очков опыта. Используется в отображении меню и уведомлениях.
-- **`SkillTypes`**: TStringArray массив со списком типов навыков. Только заглавные символы. При добавлении нового типа навыка, необходимо заполнить также и параметры для него **SkillTypesList**, **SkillTypesNotifyIcons**, **SkillTypesMenuIcons**, **SkillStartedPoints**, **PointsDecreaseAfterDeath**.
+- **`SkillTypes`**: TStringArray массив со списком типов навыков. Только заглавные символы. Вывод в меню навыков выводится в том же порядке, как они указаны в конфиге.
 - **`SkillTypesList`**: Присвоение типу навыка перевода. Может использоваться обычный текст или строка из stringtable.csv
 - **`SkillTypesNotifyIcons`**: Присвоение типу навыка иконки уведомления. Полный путь к картинке формата edds.
 
