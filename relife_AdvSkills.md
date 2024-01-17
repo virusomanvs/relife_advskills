@@ -61,12 +61,14 @@
 - **`clearPerkUsingChance`**: `bool` Сброс перков используя их внутренний шанс сброса **chanceToClear** 
 - **`clearPerkUsingRandom`**: `bool` Сброс случайных перков в количестве указанном в **clearPerkUsingRandom_count**. Зависимые перки также будут сброшены по цепочке.
 - **`clearPerkUsingRandom_count`**: `int` Количество сбрасываемых перков в случае если **clearPerkUsingRandom** равен `true`.
-- 
+- **`IgnoreDeathPerkPlayers`**: `TStringArray` массив строк STEAMID для игнорирования сброса перков. При наличии STEAMID игрока, на него не будут распространяться никакие настройки сброса перков или опыта.
 ```json
 {
-    "clearPerkUsingChance": 0,
-    "clearPerkUsingRandom": 0,
-    "clearPerkUsingRandom_count": 5,
+"IgnoreDeathPerkPlayers": [],
+}
+```
+```json
+{
     "IgnoreDeathPerkPlayers": [],
     "desc11": "[][][][_PERK ROTTEN EAT SETTINGS_][][][]",
     "BadEatPrepareTool": [
