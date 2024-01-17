@@ -1,3 +1,5 @@
+- **`enableLogsProfile`**: Вкл. или выкл. ведение логов которые сохраняются по пути **profiles\LogArchives\relife_AdvSKills**
+
 ```json
 {
     "ConfigVersion": "1",
