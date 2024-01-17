@@ -1,6 +1,6 @@
 # Описание переменных в конфиге config_ActionCompletePoints.json
 
-Параметры могу быть указаны для поиска начисляемого опыта по имени переменной.
+Параметры могут быть указаны для поиска начисляемого опыта по имени переменной.
 
 ## `GetAdvSkills().GetAddPointsFromName(string pointConfigName)`
 
