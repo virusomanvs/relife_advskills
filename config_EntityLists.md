@@ -23,126 +23,51 @@
 - **`addBrainKuru`**: `bool` Добавить агенты куру предмету.
 - **`perkCoefEnable`**: `bool` Включить зависимость состояния и количества от активированных перков в массиве **perkCoefList**.
 
+```json
+{
+  "itemClassname": "Guts",
+  "itemCount": 2,
+  "haveQuantity": 1,
+  "countQuantity": -1.0,
+  "randomQuantity": 1,
+  "QuantRandMin": 0.30000001192092898,
+  "QuantRandMax": 0.8999999761581421,
+  "toolCoefEnable": 0,
+  "toolDamageCoef": 1.0,
+  "addSalmonella": 1,
+  "addBrainKuru": 0,
+  "perkCoefEnable": 1,
+  "perkCoefList": []
+},
+```
+
 ### `perkCoefList` - настройка перков для изменения количества и состояния выпадаемых предметов при разделке.
-Перки в массиве должны распологаться в порядке увеличения, так как будет использоваться крайний активированный перк.
+Перки в массиве должны распологаться в порядке увеличения, так как будет использоваться крайний активированный перк. Значение -1.0 отключает настройку в тех пунктах которые имеют значение типа `float`.
 
 - **`enableCoef`**: `bool` Включить зависимость от текущего перка.
 - **`perkID`**: `int` ID перка который будет влиять на разделку.
+- **`coefQuantity`**: `float` Множитель увеличения количества в % от значения по умолчанию.
+- **`setQuantity`**: `float` Фиксированное количество в % если **coefQuantity** равно -1.
+- **`coefCount`**: `float` Множитель увеличения количества в штуках от значения по умолчанию.
+- **`setCount`**: `float`  Фиксированное количество в штуках если **coefCount** равно -1.
 
 ```json
-
-                "perkCoefList": [
-                    {
-                        "enableCoef": 1,
-                        "perkID": 17,
-                        "coefQuantity": 1.2000000476837159,
-                        "setQuantity": -1.0,
-                        "coefCount": -1.0,
-                        "setCount": 2
-                    },
-                    {
-                        "enableCoef": 1,
-                        "perkID": 18,
-                        "coefQuantity": 1.5,
-                        "setQuantity": -1.0,
-                        "coefCount": -1.0,
-                        "setCount": 2
-                    },
-                    {
-                        "enableCoef": 1,
-                        "perkID": 19,
-                        "coefQuantity": 1.7000000476837159,
-                        "setQuantity": -1.0,
-                        "coefCount": -1.0,
-                        "setCount": 3
-                    },
-                    {
-                        "enableCoef": 1,
-                        "perkID": 20,
-                        "coefQuantity": 1.899999976158142,
-                        "setQuantity": -1.0,
-                        "coefCount": -1.0,
-                        "setCount": 3
-                    }
-                ]
-            },
-            {
-                "itemClassname": "Guts",
-                "itemCount": 2,
-                "haveQuantity": 1,
-                "countQuantity": -1.0,
-                "randomQuantity": 1,
-                "QuantRandMin": 0.30000001192092898,
-                "QuantRandMax": 0.8999999761581421,
-                "toolCoefEnable": 0,
-                "toolDamageCoef": 1.0,
-                "addSalmonella": 1,
-                "addBrainKuru": 0,
-                "perkCoefEnable": 1,
-                "perkCoefList": []
-            },
-            {
-                "itemClassname": "Bone",
-                "itemCount": 1,
-                "haveQuantity": 1,
-                "countQuantity": 1.0,
-                "randomQuantity": 1,
-                "QuantRandMin": 0.10000000149011612,
-                "QuantRandMax": 0.5,
-                "toolCoefEnable": 0,
-                "toolDamageCoef": 1.0,
-                "addSalmonella": 1,
-                "addBrainKuru": 0,
-                "perkCoefEnable": 1,
-                "perkCoefList": []
-            },
-            {
-                "itemClassname": "Lard",
-                "itemCount": 0,
-                "haveQuantity": 1,
-                "countQuantity": -1.0,
-                "randomQuantity": 1,
-                "QuantRandMin": 0.30000001192092898,
-                "QuantRandMax": 0.8999999761581421,
-                "toolCoefEnable": 0,
-                "toolDamageCoef": 1.0,
-                "addSalmonella": 1,
-                "addBrainKuru": 0,
-                "perkCoefEnable": 1,
-                "perkCoefList": [
-                    {
-                        "enableCoef": 1,
-                        "perkID": 20,
-                        "coefQuantity": -1.0,
-                        "setQuantity": -1.0,
-                        "coefCount": -1.0,
-                        "setCount": 1
-                    }
-                ]
-            },
-            {
-                "itemClassname": "PigPelt",
-                "itemCount": 0,
-                "haveQuantity": 0,
-                "countQuantity": -1.0,
-                "randomQuantity": 1,
-                "QuantRandMin": 0.30000001192092898,
-                "QuantRandMax": 0.800000011920929,
-                "toolCoefEnable": 0,
-                "toolDamageCoef": 1.0,
-                "addSalmonella": 0,
-                "addBrainKuru": 0,
-                "perkCoefEnable": 1,
-                "perkCoefList": [
-                    {
-                        "enableCoef": 1,
-                        "perkID": 63,
-                        "coefQuantity": -1.0,
-                        "setQuantity": -1.0,
-                        "coefCount": -1.0,
-                        "setCount": 1
-                    }
-                ]
-            }
-        ]
+"perkCoefList": [
+    {
+      "enableCoef": 1,
+      "perkID": 17,
+      "coefQuantity": 1.2000000476837159,
+      "setQuantity": -1.0,
+      "coefCount": -1.0,
+      "setCount": 2
     },
+    {
+      "enableCoef": 1,
+      "perkID": 18,
+      "coefQuantity": 1.2000000476837159,
+      "setQuantity": -1.0,
+      "coefCount": -1.0,
+      "setCount": 3
+    }
+]
+```
