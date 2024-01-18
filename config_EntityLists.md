@@ -1,20 +1,28 @@
+## Начисление опыта при разделке и убийстве животных или зараженных.
 
-"Animal_SusDomesticus": {
-        "AnimalType": "Animal_SusDomesticus",
-        "KillPoints": 2.0,
-        "SkinningPoints": 1.0,
-        "toolSkinDamageCoef": 1.0,
-        "typeOfSkill": "HUNTING",
-        "showNotify": 0,
-        "ItemSkin": [
-            {
-                "itemClassname": "PigSteakMeat",
-                "itemCount": 1,
-                "haveQuantity": 1,
-                "countQuantity": -1.0,
-                "randomQuantity": 1,
-                "QuantRandMin": 0.30000001192092898,
-                "QuantRandMax": 0.4000000059604645,
+- **`Animal_SusDomesticus`**: `string` Класснейм моба.
+- **`AnimalType`**: `string` Класснейм моба.
+- **`KillPoints`**: `float` Количество начисляемого опыта при убийстве.
+- **`SkinningPoints`**: `float` Количество начисляемого опыта при разделке.
+- **`toolSkinDamageCoef`**: `float` Множитель урона инструменту разделки. 1.0 стандартный урон.
+- **`typeOfSkill`**: `string` Тип навыка на который будет начислен опыт.
+- **`showNotify`**: `bool` Показывать уведомление о полученом опыте.
+
+### `ItemSkin` - настройка предметов разделки.
+
+- **`itemClassname`**: `string` Класснейм предмета.
+- **`itemCount`**: `int` Количество предмета в штуках, не в %.
+- **`haveQuantity`**: `bool` Если у предмета есть % или внутренне количество.
+- **`countQuantity`**: `float` Количество предмета в % или фактическом состоянии.
+- **`randomQuantity`**: `bool` Включить случайно количество предмета в % или фактическом состоянии.
+- **`QuantRandMin`**: `float` Минимальное значение случайного количества.
+- **`QuantRandMax`**: `float` Максимальное значение случайного количества.
+- **`toolCoefEnable`**: `bool` Включить зависимость состояния от состояния инструмента разделки.
+- **`toolDamageCoef`**: `float` Множитель состояния от состояния инструмента.
+- 
+```json
+[
+"ItemSkin": [
                 "toolCoefEnable": 0,
                 "toolDamageCoef": 1.0,
                 "addSalmonella": 1,
