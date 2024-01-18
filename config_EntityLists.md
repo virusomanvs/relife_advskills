@@ -18,16 +18,13 @@
 - **`QuantRandMin`**: `float` Минимальное значение случайного количества.
 - **`QuantRandMax`**: `float` Максимальное значение случайного количества.
 - **`toolCoefEnable`**: `bool` Включить зависимость состояния от состояния инструмента разделки.
-- **`toolDamageCoef`**: `float` Множитель состояния от состояния инструмента.
+- **`toolDamageCoef`**: `float` Множитель состояния предмета от состояния инструмента.
+- **`addSalmonella`**: `bool` Добавить агенты сальмонеллы предмету.
+- **`addBrainKuru`**: `bool` Добавить агенты куру предмету.
+- **`perkCoefEnable`**: `bool` Включить зависимость состояния и количества от активированных перков в массиве **perkCoefList**.
 - 
 ```json
-[
-"ItemSkin": [
-                "toolCoefEnable": 0,
-                "toolDamageCoef": 1.0,
-                "addSalmonella": 1,
-                "addBrainKuru": 0,
-                "perkCoefEnable": 1,
+
                 "perkCoefList": [
                     {
                         "enableCoef": 1,
