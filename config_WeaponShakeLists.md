@@ -1,3 +1,19 @@
+## Настройка сбора урожая и влияние перков на него
+
+- **`plantName`**: `string` Класснейм растения.
+- **`itemHarvestName`**: `string` Класснейм выпадаемого плода при сборе.
+- **`skillPointsForHarvest`**: `float` Количество опыта при сборе урожая.
+- **`randomCount`**: `bool` Включить рандомное количество.
+- **`setCount`**: `float`  Фиксированное количество в штуках если **randomCount** равно -1.
+- **`countRandMin`**: `float` Рандом количество в штуках минимум.
+- **`countRandMax`**: `float` Рандом количество в штуках максимум.
+- **`randomQuantity`**: `bool` Включить рандомное количество в %.
+- **`setQuantityPerc`**: `float` Фикс. количество в %.
+- **`quantRandMinPerc`**: `float` Рандом количество в % минимум.
+- **`quantRandMaxPerc`**: `float` Рандом количество в % максимум.
+- **`perkCoefEnable`**: `bool` Включить влияние перков на сбор урожая.
+  
+```json
 [
     {
         "weaponClassname": "DefaultWeapon",
@@ -26,3 +42,4 @@
         ]
     }
 ]
+```
