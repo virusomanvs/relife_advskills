@@ -199,6 +199,14 @@
     ],
 }
 ```
+- **`FishingLuresTypes`**: `TStringArray` Список блесен которые не будут исчезать при ловле, на них будет работать только урон по самой блесне. Актуально для модов на рыбалку.
+```json
+{
+    "FishingLuresTypes": [
+        "LureClassName"
+    ],
+}
+```
 - **`FishingGoodRodTypes`**: `TStringArray` Список удочек которые дают бонус к рыбалке.
 ```json
 {
