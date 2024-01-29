@@ -207,6 +207,22 @@
     ],
 }
 ```
+- **`FishingGarbageItemsTypes`**: `TStringArray` Список мусора который падает при рыбалке.
+```json
+{
+    "FishingGarbageItemsTypes": [
+        "Rag"
+    ],
+}
+```
+- **`FishingGoodItemsTypes`**: `TStringArray` Список полезных предметов которые падает при рыбалке.
+```json
+{
+    "FishingGoodItemsTypes": [
+        "Apple"
+    ],
+}
+```
 - **`FishingGoodRodTypes`**: `TStringArray` Список удочек которые дают бонус к рыбалке.
 ```json
 {
