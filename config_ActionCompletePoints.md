@@ -1,5 +1,5 @@
 # Описание переменных в конфиге config_ActionCompletePoints.json
-
+## Настройка начисления опыта при выполнении действий наследуемых классы ActionContiniousBase и ActionSingleUseBase
 Описание действия `ActionChickenBreak`.
 
 - **`ActionChickenBreak`**: Класснейм действия.
