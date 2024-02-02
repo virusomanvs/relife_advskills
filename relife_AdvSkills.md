@@ -178,8 +178,40 @@
 
 - **`ItemSkinningInPercent`**: `bool` Включает использование процентов при разделке животных, для настройки состояния мяса. Если выключено, то настройки состояния должны быть в фактическом количестве.
 - **`FishingPerkConfig`**: `map` Хранит в себе настройки для перков по рыбалке, может быть изменен для своих целей.
-- 
+
 Чтобы получить настройку из массива используйте GetAdvSkills().GetFishingPerkConfig(`string settingsName`);
+```json
+"FishingPerkConfig": {
+        "DigWormMoreChance": 0.5,
+        "FishchanceToCatchPond_OnFishingPerk_1": 0.20000000298023225,
+        "FishchanceToCatchPond_OnFishingPerk_2": 0.30000001192092898,
+        "FishchanceToCatchPond_OnFishingPerk_3": 0.4000000059604645,
+        "IsNightBonus": 0.10000000149011612,
+        "FishchanceToCatchPond_Default": 0.10000000149011612,
+        "FishingDamageRodWithPerk": -2.0,
+        "FishingDamageBait": -5.0,
+        "GoodFishingClothesBonus": 0.5,
+        "FishingHookLoss_Default": 0.5,
+        "FishingItemChance_Default": 0.3499999940395355,
+        "FishingLostFishChance": 0.10000000149011612,
+        "FishingRainBonus": 0.10000000149011612,
+        "FishingGarbageChance_OnFishingLuckyPerk_1": 0.699999988079071,
+        "FishingGarbageChance_OnFishingLuckyPerk_2": 0.6000000238418579,
+        "FishingGarbageChance_OnFishingLuckyPerk_3": 0.5,
+        "FishchanceToCatchSea_OnFishingPerk_1": 0.20000000298023225,
+        "FishchanceToCatchSea_OnFishingPerk_2": 0.30000001192092898,
+        "FishchanceToCatchSea_OnFishingPerk_3": 0.4000000059604645,
+        "FishingDamageRod": -5.0,
+        "FishingHookLoss_OnHookPerk_3": 0.10000000149011612,
+        "FishchanceToCatchSea_Default": 0.10000000149011612,
+        "FishingHookLoss_OnHookPerk_1": 0.3499999940395355,
+        "FishingHookLoss_OnHookPerk_2": 0.25,
+        "FishingGarbageChance_Default": 0.800000011920929,
+        "FishingDamageBaitWithPerk": -2.0,
+        "GoodFishingRodBonus": 0.10000000149011612,
+        "FishingRepeatChance": 0.3499999940395355
+    }
+```
 
 ## Настройки перков рыбалки
 - **`DigWormMoreChance`**: `float` Шанс на выкапывание дополнительного червя при активированном перке.
