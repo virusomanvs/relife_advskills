@@ -182,6 +182,7 @@
 Чтобы получить настройку из массива используйте GetAdvSkills().GetFishingPerkConfig(`string settingsName`);
 
 ## Настройки перков рыбалки
+- **`FishingRepeatChance`**: `float` Шанс прокрута круглешка действия. Чем больше, тем дольше будет крутится кругляш.
 - **`FishingHookLoss_Default`**: `float` Шанс потери наживки без перка.
 - **`FishingHookLoss_OnHookPerk_`**: `float` Шансы потери наживки при перках.
 - **`FishchanceToCatchSea_Default`**: `float` Шанс поимки в море по умолчнанию.
