@@ -55,6 +55,7 @@
 ## Добавление опыта ОХОТНИКА игроку при стрельбе из оружия.
 
 - **`AddPointToPlayerWeaponFire`**: `bool` Включить/выключить начисление при стрельбе.
+- **`EnableDefaultPointToPlayerWeaponFire`**: `bool` Включить/выключить начисление опыта при стрельбе из все оружий, но если перед параметром DefaultWeapon будет запись с оружием, параметры будут браться из него.
 - **`WeaponFireAddPoints`**: `string`,`float`  Класснейм оружия наследуемого Weapon_Base и начисляемый опыт за каждый патрон. Опыт будет начислен при достижении значения AddPointMax
 - **`AddPointMax`**: `float` Каждый выстрел хранит и плюсует общее значение, при достижении этого значения будет начислено текущее количество опыта. Например: АКМ за каждый выстрел 0.25, AddPointMax = 1, значит при выстреле 4 раза будет начислен AddPointMax. Лишний опыт будет отсеян. Например, если получится при выстреле значение больше чем положено, будет все равно начислено AddPointMax.
 - **`ShowWeaponFireAddPointNotify`**: `bool` Показывать уведомление при начислении опыта.
@@ -62,10 +63,12 @@
 ```json
 {
     "AddPointToPlayerWeaponFire": 1,
+    "EnableDefaultPointToPlayerWeaponFire": 0,
     "AddPointMax": 1.0,
     "WeaponFireAddPoints": {
         "Magnum": 1.0,
-        "AKM": 0.25
+        "AKM": 0.25,
+        "DefaultWeapon": 1.0
     },
     "ShowWeaponFireAddPointNotify": 1,
     "ItemSkinningInPercent": 1,
