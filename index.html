@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Editor</title>
+</head>
+<body>
+    <input type="file" id="fileInput" accept=".json">
+    <button onclick="loadFile()">Load File</button>
+    
+    <div id="jsonEditor">
+        <!-- Placeholder for settings UI -->
+    </div>
+
+    <button onclick="addNewElement()">Add Element</button>
+    <button onclick="saveFile()">Save File</button>
+
+    <script>
+        let currentJsonData = [];
+
+        function loadFile() {
+            const fileInput = document.getElementById('fileInput');
+            const jsonEditor = document.getElementById('jsonEditor');
+
+            const file = fileInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const content = e.target.result;
+                    currentJsonData = JSON.parse(content);
+                    renderSettingsUI();
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        function renderSettingsUI() {
+            const jsonEditor = document.getElementById('jsonEditor');
+            jsonEditor.innerHTML = ''; // Clear previous content
+
+            currentJsonData.forEach((item, index) => {
+                const container = document.createElement('div');
+                container.innerHTML = `
+                    <label for="recipeName${index}">Recipe Name:</label>
+                    <input type="text" id="recipeName${index}" value="${item.recipeName}">
+                    <label for="neededPerkID${index}">Needed Perk ID:</label>
+                    <input type="number" id="neededPerkID${index}" value="${item.neededPerkID}">
+                    <button onclick="removeElement(${index})">Remove</button>
+                    <hr>
+                `;
+                jsonEditor.appendChild(container);
+            });
+        }
+
+        function addNewElement() {
+            currentJsonData.push({
+                recipeName: '',
+                neededPerkID: 0,
+            });
+            renderSettingsUI();
+        }
+
+        function removeElement(index) {
+            currentJsonData.splice(index, 1);
+            renderSettingsUI();
+        }
+
+        function saveFile() {
+            const jsonEditor = document.getElementById('jsonEditor');
+            const newData = [];
+
+            jsonEditor.childNodes.forEach((container, index) => {
+                const recipeNameInput = container.querySelector(`#recipeName${index}`);
+                const neededPerkIDInput = container.querySelector(`#neededPerkID${index}`);
+
+                newData.push({
+                    recipeName: recipeNameInput.value,
+                    neededPerkID: parseInt(neededPerkIDInput.value, 10),
+                });
+            });
+
+            currentJsonData = newData;
+
+            const blob = new Blob([JSON.stringify(newData, null, 2)], { type: 'application/json' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'edited_file.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>
