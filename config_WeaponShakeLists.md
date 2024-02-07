@@ -1,6 +1,6 @@
 ## Настройка тряски оружия и влияние перков на него
 
-- **`weaponClassname`**: `string` Класснейм оружия. DefaultWeapon если включен параметр enableDefaultWeaponRecord.
+- **`weaponClassname`**: `string` Класснейм оружия. DefaultWeapon если включен параметр enableDefaultWeaponRecord. Настройка будет распространяться на все оружия которое не в списке до DefaultWeapon
 - **`defaultSpeed`**: `float` Настройки скорости по умолчанию.
 - **`defaultWeight`**: `float` Настройки веса по умолчанию.
 - **`perkCoefEnable`**: `bool` Включить влияние перков на тряску оружия.
