@@ -1,4 +1,4 @@
-##class PlayerBase
+## class PlayerBase
 
 **`bool IsPerkActive(int perkID)`**
 void AddSkillPoint(string skillType, float valuePoints)
