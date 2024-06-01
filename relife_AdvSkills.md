@@ -84,6 +84,7 @@
 - **`PlayerCountDeathToPenalty`**: `int` Количество смертей при достижении которых сброятся перки
 - **`clearPlayersPoints`**: `bool` Включить/выключить сброс опыта при смерти игрока
 - **`enableDeacreasePoints`**: `bool` Включить/выключить сброс опыта на определенный процент указанный в типе навыка при смерти игрока
+- **`clearReadedBook`**: `bool` Сброс прочитанных книг. 
 - **`clearPerkUsingChance`**: `bool` Сброс перков используя их внутренний шанс сброса **chanceToClear** 
 - **`clearPerkUsingRandom`**: `bool` Сброс случайных перков в количестве указанном в **clearPerkUsingRandom_count**. Зависимые перки также будут сброшены по цепочке.
 - **`clearPerkUsingRandom_count`**: `int` Количество сбрасываемых перков в случае если **clearPerkUsingRandom** равен `true`.
