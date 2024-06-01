@@ -10,6 +10,8 @@
 - **`DefaultStatus`**: `bool` Неактуально.
 - **`NeedLvl`**: `float` Стоимость перка. Если указано -1 то будет отображено что необходима книга для активации.
 - **`NeedOtherPerk`**: `int` ID перка который необходим для активации этого перка.
+- **`NeedAllReadedBook`**: `bool` 1 Если нужно прочесть все книги из перка чтобы он был разблокирован. 0 Нужно будет прочесть одну из книг в списке.
+- **`NeedBooksToShow`**: `TStringArray` Массив с класснеймами книг, которые нужно прочесть чтобы перк был показан в списке. Оставить пустым если открыт по умолчанию.
 - **`chanceToClear`**: `float` Шанс сброса перка если есть соответствующая настройка в сбросах перков у игрков.
 
 
@@ -25,6 +27,8 @@
         "DefaultStatus": 0,
         "NeedLvl": 25.0,
         "NeedOtherPerk": -1,
+        "NeedAllReadedBook": 1,
+        "NeedBooksToShow": ["RLF_MedicalBook3_Skills", "RLF_MedicalBook2_Skills"],
         "chanceToClear": 1.0
     },
     {
@@ -37,6 +41,8 @@
         "DefaultStatus": 0,
         "NeedLvl": 25.0,
         "NeedOtherPerk": -1,
+        "NeedAllReadedBook": 0,
+        "NeedBooksToShow": ["RLF_MedicalBook3_Skills"],
         "chanceToClear": 1.0
     }
 ]
