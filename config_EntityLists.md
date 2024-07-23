@@ -50,7 +50,7 @@
 	WOUND_AGENT		= 64;
 	NERVE_AGENT		= 128;
 }
-
+```
 ```json
 {
     "Animal_CapreolusCapreolus": {
