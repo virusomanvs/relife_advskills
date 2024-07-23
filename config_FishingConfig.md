@@ -73,3 +73,90 @@
     },
 }
 ```
+## Настройка рыбы и предметов, шансов поимки. Настройка разделки рыбы.
+## FishingSeaFishTypes FishingPondFishTypes FishingGoodItemTypes FishingTrashItemTypes - Имеют идентичные параметры. 
+
+- **`itemFishID`**: `int` Уникальное ID для рыбы, предмета.
+ВНИМАНИЕ! ID во всех массивах FishingSeaFishTypes FishingPondFishTypes FishingGoodItemTypes FishingTrashItemTypes не должны повторяться и должны быть уникальными.
+- **`className`**: `string` Класснейм рыбы.
+- **`isNeededFishingRod`**: `TStringArray` Список класснеймов удочек, при которых будет ловиться рыба или предмет. Если оставить пустым, то будет ловиться на все.
+- **`chanceToCatch`**: `float` Шанс выловить рыбу или предмет из общего списка всех предметов или рыб.
+- **`skillPointsForCatch`**: `float` Количество опыта при успешной ловле.
+- **`difficultCatch`**: `float` неиспользуется.
+- **`enableQuHe`**: `bool` Включите если хотите отредактировать настройки здоровья и кол-ва в процентах у предмета который вы выловите.
+- **`setHealthPerc[3]`**: `float` Включите если хотите отредактировать настройки здоровья и кол-ва в процентах у предмета который вы выловите.
+```json
+{
+   "FishingSeaFishTypes": [
+        {
+            "itemFishID": 0,
+            "className": "Carp",
+            "isNeededFishingRod": [
+                "rod1",
+                "rod2"
+            ],
+            "chanceToCatch": 0.5,
+            "skillPointsForCatch": 1.0,
+            "difficultCatch": [
+                1.0,
+                1.0
+            ],
+            "enableQuHe": 0,
+            "setHealthPerc": [
+                -1.0,
+                0.6000000238418579,
+                0.949999988079071
+            ],
+            "setQuantityPerc": [
+                -1.0,
+                0.6000000238418579,
+                0.949999988079071
+            ],
+            "itemPrepareList": [
+                {
+                    "className": "CarpFilletMeat",
+                    "itemCount": [
+                        1,
+                        -1,
+                        -1
+                    ],
+                    "chanceToSpawn": 1.0,
+                    "setHealthPerc": [
+                        -1.0,
+                        0.10000000149011612,
+                        0.800000011920929
+                    ],
+                    "setQuantityPerc": [
+                        -1.0,
+                        0.10000000149011612,
+                        0.800000011920929
+                    ],
+                    "perkCoefEnable": 1,
+                    "perkCoefList": [
+                        {
+                            "enableCoef": 1,
+                            "perkID": 52,
+                            "itemCount": [
+                                1,
+                                -1,
+                                -1
+                            ],
+                            "chanceToSpawn": 1.0,
+                            "setHealthPerc": [
+                                -1.0,
+                                0.10000000149011612,
+                                0.800000011920929
+                            ],
+                            "setQuantityPerc": [
+                                -1.0,
+                                0.10000000149011612,
+                                0.800000011920929
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+}
+```
