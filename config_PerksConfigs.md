@@ -1,5 +1,5 @@
 ## Здесь хранятся настройки перков, которые могут быть увеличены в количестве, редактируя только конфиг.
-## ActionContTimeConfigList - Позволяет вам с помощью перков влиять на скорость дейтсвий которые построены на компоненте CAContinuousTime или CAContinuousRepeat
+## ActionContTimeConfigList - Позволяет вам с помощью перков влиять на скорость действий, которые построены на компоненте CAContinuousTime или CAContinuousRepeat
 
 Узнать какой класс использует экшен, можно в коде.
 ![image](https://github.com/user-attachments/assets/21ebf8e4-3a57-47ec-97d8-7d47d62e4c55)
