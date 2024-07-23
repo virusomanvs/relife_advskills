@@ -74,6 +74,10 @@
 }
 ```
 ## Настройка рыбы и предметов, шансов поимки. Настройка разделки рыбы.
+ВНИМАНИЕ! Чтобы работала разделка рыбы на ваших модовых рыбках, вам нужно чтобы у них в класснейме IsFish() возврщался true
+
+![image](https://github.com/user-attachments/assets/b19b9535-cca7-4e12-afca-7b0662dba7a8)
+
 ## FishingSeaFishTypes FishingPondFishTypes FishingGoodItemTypes FishingTrashItemTypes - Имеют идентичные параметры. 
 
 - **`FishingSeaFishTypes`**: `array` Список морской рыбы.
