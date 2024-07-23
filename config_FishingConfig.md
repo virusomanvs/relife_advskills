@@ -76,6 +76,11 @@
 ## Настройка рыбы и предметов, шансов поимки. Настройка разделки рыбы.
 ## FishingSeaFishTypes FishingPondFishTypes FishingGoodItemTypes FishingTrashItemTypes - Имеют идентичные параметры. 
 
+- **`FishingSeaFishTypes`**: `array` Список морской рыбы.
+- **`FishingPondFishTypes`**: `array` Список пресной рыбы.
+- **`FishingGoodItemTypes`**: `array` Список полезных предметов.
+- **`FishingTrashItemTypes`**: `array` Список бесполезных предметов.
+  
 - **`itemFishID`**: `int` Уникальное ID для рыбы, предмета.
 ВНИМАНИЕ! ID во всех массивах FishingSeaFishTypes FishingPondFishTypes FishingGoodItemTypes FishingTrashItemTypes не должны повторяться и должны быть уникальными.
 - **`className`**: `string` Класснейм рыбы.
