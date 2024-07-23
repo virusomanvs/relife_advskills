@@ -78,6 +78,8 @@
 
 ![image](https://github.com/user-attachments/assets/b19b9535-cca7-4e12-afca-7b0662dba7a8)
 
+ а также вы должны отключить крафты или другие способы разделки ваших модовых рыб.
+
 ## FishingSeaFishTypes FishingPondFishTypes FishingGoodItemTypes FishingTrashItemTypes - Имеют идентичные параметры. 
 
 - **`FishingSeaFishTypes`**: `array` Список морской рыбы.
