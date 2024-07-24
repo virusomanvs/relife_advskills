@@ -25,9 +25,9 @@ function transformItem(item) {
             "haveQuantity": 1,
             "setQuantity": [perk.setQuantity, item.QuantRandMin, item.QuantRandMax],
             "setHealth": [1, -1, -1],
-            "toolHealthCoefEnable": item.toolCoefEnable,
+            "toolHealthCoefEnable": 0,
             "coefHealthMinMaxValue": [0.5, 1.0],
-            "toolQuantityCoefEnable": item.toolCoefEnable,
+            "toolQuantityCoefEnable": 0,
             "coefQuantityMinMaxValue": [0.5, 1.0],
             "addAgents": addAgents
         }))
