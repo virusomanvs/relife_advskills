@@ -49,3 +49,22 @@
     },
 ]
 ```
+
+## Список ID перков можно посмотреть в админке, либо ниже
+![image](https://github.com/user-attachments/assets/32f0def1-d595-4815-b777-8b648e8fbf2b)
+![image](https://github.com/user-attachments/assets/dc45ecc9-5fe0-4f29-8122-65659fb24505)
+![image](https://github.com/user-attachments/assets/3a2db728-d477-4f70-ba16-4d03f3fc4a27)
+![image](https://github.com/user-attachments/assets/6d1e7c55-ce3c-4116-ad88-c4d3b3b0bd22)
+![image](https://github.com/user-attachments/assets/75ea4285-5251-4ec1-9af7-e27747d8854b)
+![image](https://github.com/user-attachments/assets/a3375f45-6690-4bbf-86c7-a4ff120b39ad)
+![image](https://github.com/user-attachments/assets/12c583d3-1e99-4339-8068-a13f959126cf)
+![image](https://github.com/user-attachments/assets/ce6dbabc-4c3b-4106-b194-a02360e56977)
+![image](https://github.com/user-attachments/assets/f6f01aed-4be1-4632-b97f-b2e01873c63b)
+
+
+
+
+
+
+
+
