@@ -19,39 +19,39 @@
             {
                 "perkID": -1,
                 "setCoef": 0.8500000238418579,
-                "setTime": 1
+                "setTime": 100
             },
             {
                 "perkID": 160,
                 "setCoef": 0.8500000238418579,
-                "setTime": 1
+                "setTime": -1
             },
             {
                 "perkID": 161,
                 "setCoef": 0.6000000238418579,
-                "setTime": 1
+                "setTime": -1
             },
             {
                 "perkID": 162,
                 "setCoef": 0.3499999940395355,
-                "setTime": 1
+                "setTime": -1
             }
         ],
         "ActionBuildPart": [
             {
                 "perkID": 156,
                 "setCoef": 0.8500000238418579,
-                "setTime": 1
+                "setTime": -1
             },
             {
                 "perkID": 155,
                 "setCoef": 0.6499999761581421,
-                "setTime": 1
+                "setTime": -1
             },
             {
                 "perkID": 154,
                 "setCoef": 0.4000000059604645,
-                "setTime": 1
+                "setTime": -1
             }
         ],
     }
