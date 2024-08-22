@@ -18,3 +18,14 @@
     }
 ]
 ```
+ВНИМАНИЕ! Ваш экшен должен наследовать ActionConditionContinue иначе блок не будет работать. Чтобы у вас работал блок для модовых экшенов, там где есть свой ActionConditionContinue. Просто переопределите его
+
+```C#
+  override bool ActionConditionContinue(ActionData action_data)
+	{
+		if(super.ActionConditionContinue(action_data))
+			return PerkBlockerCondition(action_data.m_Player, action_data.m_Target, action_data.m_MainItem);
+
+		return super.ActionConditionContinue(action_data);
+	}
+```
