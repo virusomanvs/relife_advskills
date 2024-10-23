@@ -33,6 +33,8 @@
 - **`PerksAdminSteamID`**: `TStringArray` массив строк STEAMID где написаны админы перков у которых будет отображена дополнительная информация ID перков и другое. 
 - **`EnableGestureIDDebug`**: `bool` Включает вывод ID жеста в script логи сервера. Необходимо для настройки конфига config_GesturePointConfigs.json если вы не знаете ID нужного вам жеста.
 - **`EnablePerkIDDebug`**: `bool` Включает вывод ID перка рядом с его названием
+- **`EnableSkinningDefaultSettingAnimal`**: `bool` Включает наследование всех животных с класса AnimalBase если их класса нет в конфиге config_EntityLists.json
+- **`EnableSkinningDefaultSettingsZombie`**: `bool` Включает наследование всех зараженных с класса ZombieBase если их класса нет в конфиге config_EntityLists.json
 ## Добавление опыта ОХОТНИКА игроку при стрельбе из оружия.
 
 
