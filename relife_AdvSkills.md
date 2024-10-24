@@ -30,7 +30,7 @@
 - **`PointsDecreaseAfterDeathForAll`**:  `float` Значение от 0.0 до 1.0 на сколько в процентах уменьшится опыт, если в параметрах типа навыка не указано начальное значение.
 - **`enableDefaultWeaponRecord`**:  `bool` Включить тряску оружия для всех видов используя параметр DefaultWeapon.
 - **`DefaultSkinningTime`**: `float` Первоначальная скорость разделки животных без перков.
-- **`PerksAdminSteamID`**: `TStringArray` массив строк STEAMID где написаны админы перков у которых будет отображена дополнительная информация ID перков и другое. 
+- **`PerksAdminSteamID`**: `TStringArray` массив строк STEAMID где написаны админы перков у которых будет отображена дополнительная информация ID перков, а также будет доступна админ панель. 
 - **`EnableGestureIDDebug`**: `bool` Включает вывод ID жеста в script логи сервера. Необходимо для настройки конфига config_GesturePointConfigs.json если вы не знаете ID нужного вам жеста.
 - **`EnablePerkIDDebug`**: `bool` Включает вывод ID перка рядом с его названием
 - **`EnableSkinningDefaultSettingAnimal`**: `bool` Включает наследование всех животных с класса AnimalBase если их класса нет в конфиге config_EntityLists.json
