@@ -70,73 +70,413 @@ enum eAgents
 
 ```json
 {
-    "Animal_CapreolusCapreolus": {
-        "KillPoints": 5.0,
-        "SkinningPoints": 5.0,
-        "toolSkinDamageCoef": 1.0,
-        "typeOfSkillKill": "HUNTING",
-        "typeOfSkillSkinning": "HUNTING",
-        "showNotify": 1,
-        "modeKnifesAllow": 0,
-        "allowknifesListKindOf": 1,
-        "knifesList": ["knife1", "knife2"],
-        "knifesListID": [],
-        "ItemSkin": [
-            {
-                "itemClassname": "MeatClassName",
-                "setCount": [1,-1,-1],
-                "chanceToSpawn": 1.0,
-		"toolsSpawnList": {},
-                "haveQuantity": 1,
-                "setQuantity": [1,-1,-1],
-                "setHealth": [1,-1,-1],
-                "toolHealthCoefEnable": 0,
-                "coefHealthMinMaxValue": [0.5,1.0],
-                "toolQuantityCoefEnable": 0,
-                "coefQuantityMinMaxValue": [0.5,1.0],
-                "toolDamageCoef": 1.0,
-                "addAgents": [
-                    4
-                ],
-                "perkCoefEnable": 1,
-                "perkCoefList": [
-                    {
-                        "enableCoef": 1,
-                        "perkID": 89,
-                        "chanceToSpawn": 1.0,
-			"toolsSpawnList": {},
-                        "setCount": [1,-1,-1],
-                        "haveQuantity": 1,
-                        "setQuantity": [1,-1,-1],
-                        "setHealth": [1,-1,-1],
-                        "toolHealthCoefEnable": 0,
-                        "coefHealthMinMaxValue": [0.5,1.0],
-                        "toolQuantityCoefEnable": 0,
-                        "coefQuantityMinMaxValue": [0.5,1.0],
-                        "addAgents": [
-                            4
-                        ]
-                    },
-                    {
-                        "enableCoef": 1,
-                        "perkID": 90,
-                        "chanceToSpawn": 1.0,
-                        "setCount": [1,-1,-1],
-			"toolsSpawnList": {},
-                        "haveQuantity": 1,
-                        "setQuantity": [1,-1,-1],
-                        "setHealth": [1,-1,-1],
-                        "toolHealthCoefEnable": 0,
-                        "coefHealthMinMaxValue": [0.5,1.0],
-                        "toolQuantityCoefEnable": 0,
-                        "coefQuantityMinMaxValue": [0.5,1.0],
-                        "addAgents": [
-                            4
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
+    "KillPoints": 3.0,
+    "SkinningPoints": 2.0,
+    "toolSkinDamageCoef": 1.0,
+    "typeOfSkillKill": "HUNTING",
+    "typeOfSkillSkinning": "HUNTING",
+    "showNotify": 0,
+    "modeKnifesAllow": 0,
+    "allowknifesListKindOf": 1,
+    "knifesList": [],
+    "knifesListID": [],
+    "ItemSkin": [
+        {
+            "itemClassname": "CowSteakMeat",
+            "setCount": [
+                1,
+                -1,
+                -1
+            ],
+            "chanceToSpawn": 1.0,
+            "toolsSpawnList": {},
+            "haveQuantity": 1,
+            "setQuantity": [
+                -1.0,
+                0.30000001192092898,
+                0.4000000059604645
+            ],
+            "setHealth": [
+                1.0,
+                -1.0,
+                -1.0
+            ],
+            "toolHealthCoefEnable": 1,
+            "coefHealthMinMaxValue": [
+                0.5,
+                1.0
+            ],
+            "toolQuantityCoefEnable": 0,
+            "coefQuantityMinMaxValue": [
+                0.5,
+                1.0
+            ],
+            "toolDamageCoef": 1.0,
+            "addAgents": [
+                4
+            ],
+            "perkCoefEnable": 1,
+            "perkCoefList": [
+                {
+                    "enableCoef": 1,
+                    "perkID": 17,
+                    "chanceToSpawn": 1.0,
+                    "toolsSpawnList": {},
+                    "setCount": [
+                        2,
+                        -1,
+                        -1
+                    ],
+                    "haveQuantity": 1,
+                    "setQuantity": [
+                        -1.0,
+                        0.5,
+                        0.6000000238418579
+                    ],
+                    "setHealth": [
+                        1.0,
+                        -1.0,
+                        -1.0
+                    ],
+                    "toolHealthCoefEnable": 1,
+                    "coefHealthMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "toolQuantityCoefEnable": 0,
+                    "coefQuantityMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "addAgents": [
+                        4
+                    ]
+                },
+                {
+                    "enableCoef": 1,
+                    "perkID": 18,
+                    "chanceToSpawn": 1.0,
+                    "toolsSpawnList": {},
+                    "setCount": [
+                        2,
+                        -1,
+                        -1
+                    ],
+                    "haveQuantity": 1,
+                    "setQuantity": [
+                        -1.0,
+                        0.6000000238418579,
+                        0.699999988079071
+                    ],
+                    "setHealth": [
+                        1.0,
+                        -1.0,
+                        -1.0
+                    ],
+                    "toolHealthCoefEnable": 1,
+                    "coefHealthMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "toolQuantityCoefEnable": 0,
+                    "coefQuantityMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "addAgents": [
+                        4
+                    ]
+                },
+                {
+                    "enableCoef": 1,
+                    "perkID": 19,
+                    "chanceToSpawn": 1.0,
+                    "toolsSpawnList": {},
+                    "setCount": [
+                        3,
+                        -1,
+                        -1
+                    ],
+                    "haveQuantity": 1,
+                    "setQuantity": [
+                        -1.0,
+                        0.699999988079071,
+                        0.8500000238418579
+                    ],
+                    "setHealth": [
+                        1.0,
+                        -1.0,
+                        -1.0
+                    ],
+                    "toolHealthCoefEnable": 1,
+                    "coefHealthMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "toolQuantityCoefEnable": 0,
+                    "coefQuantityMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "addAgents": [
+                        4
+                    ]
+                },
+                {
+                    "enableCoef": 1,
+                    "perkID": 20,
+                    "chanceToSpawn": 1.0,
+                    "toolsSpawnList": {},
+                    "setCount": [
+                        3,
+                        -1,
+                        -1
+                    ],
+                    "haveQuantity": 1,
+                    "setQuantity": [
+                        -1.0,
+                        0.8500000238418579,
+                        1.0
+                    ],
+                    "setHealth": [
+                        1.0,
+                        -1.0,
+                        -1.0
+                    ],
+                    "toolHealthCoefEnable": 1,
+                    "coefHealthMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "toolQuantityCoefEnable": 0,
+                    "coefQuantityMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "addAgents": [
+                        4
+                    ]
+                }
+            ]
+        },
+        {
+            "itemClassname": "Guts",
+            "setCount": [
+                2,
+                -1,
+                -1
+            ],
+            "chanceToSpawn": 1.0,
+            "toolsSpawnList": {},
+            "haveQuantity": 1,
+            "setQuantity": [
+                -1.0,
+                0.30000001192092898,
+                0.8999999761581421
+            ],
+            "setHealth": [
+                1.0,
+                -1.0,
+                -1.0
+            ],
+            "toolHealthCoefEnable": 1,
+            "coefHealthMinMaxValue": [
+                0.5,
+                1.0
+            ],
+            "toolQuantityCoefEnable": 1,
+            "coefQuantityMinMaxValue": [
+                0.5,
+                1.0
+            ],
+            "toolDamageCoef": 1.0,
+            "addAgents": [
+                4
+            ],
+            "perkCoefEnable": 1,
+            "perkCoefList": []
+        },
+        {
+            "itemClassname": "Bone",
+            "setCount": [
+                1,
+                -1,
+                -1
+            ],
+            "chanceToSpawn": 1.0,
+            "toolsSpawnList": {},
+            "haveQuantity": 1,
+            "setQuantity": [
+                -1.0,
+                0.10000000149011612,
+                0.5
+            ],
+            "setHealth": [
+                1.0,
+                -1.0,
+                -1.0
+            ],
+            "toolHealthCoefEnable": 1,
+            "coefHealthMinMaxValue": [
+                0.5,
+                1.0
+            ],
+            "toolQuantityCoefEnable": 1,
+            "coefQuantityMinMaxValue": [
+                0.699999988079071,
+                1.0
+            ],
+            "toolDamageCoef": 1.0,
+            "addAgents": [
+                4
+            ],
+            "perkCoefEnable": 1,
+            "perkCoefList": []
+        },
+        {
+            "itemClassname": "Lard",
+            "setCount": [
+                0,
+                -1,
+                -1
+            ],
+            "chanceToSpawn": 1.0,
+            "toolsSpawnList": {},
+            "haveQuantity": 1,
+            "setQuantity": [
+                -1.0,
+                0.30000001192092898,
+                0.8999999761581421
+            ],
+            "setHealth": [
+                1.0,
+                -1.0,
+                -1.0
+            ],
+            "toolHealthCoefEnable": 1,
+            "coefHealthMinMaxValue": [
+                0.5,
+                1.0
+            ],
+            "toolQuantityCoefEnable": 1,
+            "coefQuantityMinMaxValue": [
+                0.699999988079071,
+                1.0
+            ],
+            "toolDamageCoef": 1.0,
+            "addAgents": [
+                4
+            ],
+            "perkCoefEnable": 1,
+            "perkCoefList": [
+                {
+                    "enableCoef": 1,
+                    "perkID": 20,
+                    "chanceToSpawn": 1.0,
+                    "toolsSpawnList": {},
+                    "setCount": [
+                        1,
+                        -1,
+                        -1
+                    ],
+                    "haveQuantity": 1,
+                    "setQuantity": [
+                        -1.0,
+                        0.30000001192092898,
+                        0.8999999761581421
+                    ],
+                    "setHealth": [
+                        1.0,
+                        -1.0,
+                        -1.0
+                    ],
+                    "toolHealthCoefEnable": 1,
+                    "coefHealthMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "toolQuantityCoefEnable": 0,
+                    "coefQuantityMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "addAgents": [
+                        4
+                    ]
+                }
+            ]
+        },
+        {
+            "itemClassname": "CowPelt",
+            "setCount": [
+                0,
+                -1,
+                -1
+            ],
+            "chanceToSpawn": 1.0,
+            "toolsSpawnList": {},
+            "haveQuantity": 1,
+            "setQuantity": [
+                -1.0,
+                0.30000001192092898,
+                0.800000011920929
+            ],
+            "setHealth": [
+                1.0,
+                -1.0,
+                -1.0
+            ],
+            "toolHealthCoefEnable": 1,
+            "coefHealthMinMaxValue": [
+                0.5,
+                1.0
+            ],
+            "toolQuantityCoefEnable": 1,
+            "coefQuantityMinMaxValue": [
+                0.699999988079071,
+                1.0
+            ],
+            "toolDamageCoef": 1.0,
+            "addAgents": [
+                4
+            ],
+            "perkCoefEnable": 1,
+            "perkCoefList": [
+                {
+                    "enableCoef": 1,
+                    "perkID": 63,
+                    "chanceToSpawn": 1.0,
+                    "toolsSpawnList": {},
+                    "setCount": [
+                        1,
+                        -1,
+                        -1
+                    ],
+                    "haveQuantity": 0,
+                    "setQuantity": [
+                        -1.0,
+                        0.30000001192092898,
+                        0.8999999761581421
+                    ],
+                    "setHealth": [
+                        1.0,
+                        -1.0,
+                        -1.0
+                    ],
+                    "toolHealthCoefEnable": 1,
+                    "coefHealthMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "toolQuantityCoefEnable": 0,
+                    "coefQuantityMinMaxValue": [
+                        0.5,
+                        1.0
+                    ],
+                    "addAgents": []
+                }
+            ]
+        }
+    ]
 }
 ```
