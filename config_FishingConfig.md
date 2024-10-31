@@ -45,9 +45,12 @@
 ```
 ## FishingPerkConfig - Список различных параметров и шансов связанных с рыбалкой.
 
+- **`FishSkinningToolDamageDefault`**: `float` Урон инструменту при разделке по умолчанию..
 - **`DigWormMoreChance`**: `float` Шанс выкопать дополнительного червя при активированном перке.
 - **`FishchanceToCatchPond_Default`**: `float` Шанс поймать что либо в озере, без вкачаных перков.
 - **`FishchanceToCatchSea_Default`**: `float` Шанс поймать что либо в море, без вкачаных перков.
+- **`FishingHookLoss_Default`**: `float` Шанс потерять крючок либо создать перк -1 и указать шанс там, без вкачаных перков.
+- **`FishingBaitLoss_Default`**: `float` Шанс потерять наживку либо создать перк -1 и указать шанс там, без вкачаных перков.
 - **`FishingDamageBait`**: `float` Урон наживке при рыбалке, без вкачаных перков.
 - **`FishingDamageHook`**: `float` Урон крючку при рыбалке, без вкачаных перков.
 - **`FishingDamageRod`**: `float` Урон удочке при рыбалке, без вкачаных перков.
@@ -61,17 +64,21 @@
 ```json
 {
     "FishingPerkConfig": {
+        "FishSkinningToolDamageDefault": -10.0,
+        "FishingHookLoss_Default": 0.5,
+        "FishingBaitLoss_Default": 0.5,
         "DigWormMoreChance": 0.5,
         "FishchanceToCatchPond_Default": 0.10000000149011612,
         "FishingDamageBait": -5.0,
         "IsNightBonus_NoPerk": 0.05000000074505806,
         "FishingDamageRod": -5.0,
-        "FishingGarbageChance_Default": 0.800000011920929,
-        "FishchanceToCatchSea_Default": 0.10000000149011612,
-        "FishSkinningToolDamageDefault": -10.0,
-        "FishingHookLoss_Default": 0.5,
-        "FishingItemChance_Default": 0.3499999940395355,
+        "FishingDamageHook": -5.0,
         "FishingRainBonus_NoPerk": 0.05000000074505806,
+        "FishchanceToCatchSea_Default": 0.10000000149011612,
+        "FishingBaitLossFail_Default": 0.5,
+        "FishingHookLossFail_Default": 0.5,
+        "FishingItemChance_Default": 0.3499999940395355,
+        "FishingGarbageChance_Default": 0.800000011920929,
         "FishingLostFishChance": 0.10000000149011612,
         "FishingRepeatChance": 0.3499999940395355
     },
