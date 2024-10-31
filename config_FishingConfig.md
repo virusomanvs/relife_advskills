@@ -48,7 +48,8 @@
 - **`DigWormMoreChance`**: `float` Шанс выкопать дополнительного червя при активированном перке.
 - **`FishchanceToCatchPond_Default`**: `float` Шанс поймать что либо в озере, без вкачаных перков.
 - **`FishchanceToCatchSea_Default`**: `float` Шанс поймать что либо в море, без вкачаных перков.
-- **`FishingDamageBait`**: `float` Урон крючку при рыбалке, без вкачаных перков.
+- **`FishingDamageBait`**: `float` Урон наживке при рыбалке, без вкачаных перков.
+- **`FishingDamageHook`**: `float` Урон крючку при рыбалке, без вкачаных перков.
 - **`FishingDamageRod`**: `float` Урон удочке при рыбалке, без вкачаных перков.
 - **`IsNightBonus_NoPerk`**: `float` Бонус при рыбалке ночью, без вкачаных перков.
 - **`FishingRainBonus_NoPerk`**: `float` Бонус при рыбалке в дождь, без вкачаных перков.
