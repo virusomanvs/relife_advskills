@@ -1,5 +1,7 @@
 # Описание настроек для сторонних модов которые хроанятся в конфигах этих модов.
-## COTZ_Workbench https://steamcommunity.com/sharedfiles/filedetails/?id=2895049000 или HP_Crafter https://steamcommunity.com/sharedfiles/filedetails/?id=3133007745. ТОЛЬКО ДЛЯ ЭТИХ МОДОВ
+### COTZ_Workbench https://steamcommunity.com/sharedfiles/filedetails/?id=2895049000 
+### HP_Crafter https://steamcommunity.com/sharedfiles/filedetails/?id=3133007745. 
+### ТОЛЬКО ДЛЯ ЭТИХ МОДОВ
 Вы можете настроить блокировку крафта в верстаке, если не активирован перк, достаточно в конфиг крафта добавить дополнительные параметры.
 
 - **`needPerkToCraft`** `int`: ID перка который блокирует крафт в верстаке, если он не активирован.
