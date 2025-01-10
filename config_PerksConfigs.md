@@ -110,6 +110,50 @@
         }
     ],
 ```
+## ViewItemOnGroundList - Позволяет вам показывать над предметом на земле, иконку чтобы выделить его. Учтите что это не работает как Wallhack ESP. Если между игроком и предметом будет препятствие, иконка не будет отображена. 
+Пример:
+![image](https://github.com/user-attachments/assets/b8d79fa9-aae6-4ea2-b2f4-7594fbd9c5f5)
+Вы можете создать множество значений в конфиге с перками и указать их здесь чтобы тонко влиять на видимость конкретных предметов.
+
+- **`perkID`**: `int` ID перка.
+- **`enableIsKindOfItemsList`**: `bool` Включить наследуемость при поиске предметов в списке.
+- **`itemsList`**: `TStringArray` Список класснеймов предметов которые будут отображаться с иконкой на земле.
+
+```json
+"ViewItemOnGroundList": [
+        {
+            "perkID": 250,
+            "enableIsKindOfItemsList": 1,
+            "itemsList": [
+                "MushroomBase"
+            ]
+        },
+        {
+            "perkID": 32222,
+            "enableIsKindOfItemsList": 0,
+            "itemsList": [
+                "Nail",
+                "SmallProtectorCase"
+            ]
+        }
+    ],
+```
+## ViewItemOnGroundIconList - Указывает иконку плашки для конкретного предмета из ViewItemOnGroundList
+
+
+- **`iconForItemPath`**: `string` Полный путь к иконке.
+- **`itemsList`**: `string` Список предметов на которые будет эта иконка. Наследуемость классов работает.
+
+```json
+"ViewItemOnGroundIconList": [
+        {
+            "iconForItemPath": "relife_AdvSkills/gui/images/mushroom.edds",
+            "itemsList": [
+                "MushroomBase"
+            ]
+        }
+    ],
+```
 ## SnareTrapConfigList - Настройка параметров силков от активированных перков. Перки должны быть в списке в порядке увеличения, так как они проверяются по списку с самого начала.
 Вы можете создать множество перков в конфиге с перками и указать их здесь чтобы тонко влиять на настройки силков.
 
