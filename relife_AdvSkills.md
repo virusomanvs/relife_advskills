@@ -34,6 +34,7 @@
 - **`PerksAdminSteamID`**: `TStringArray` массив строк STEAMID где написаны админы перков у которых будет отображена дополнительная информация ID перков, а также будет доступна админ панель.
 ```json
 {
+    "PerkAdminKeyKeyCode": "KC_NUMPAD1",
     "PerksAdminSteamID": [
         "steamid1",
         "steamid2"
