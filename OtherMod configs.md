@@ -19,20 +19,22 @@
   					{
   						"Result": "Plum",
   						"ResultCount": 1,
+
   						"needPerkToCraft": 100,
   						"addPointForCraft": 1,
   						"typeSkill": "HUNTING",
+
   						"ComponentsDontAffectHealth": 1,
   						"CraftType": "craft",
   						"RecipeName": "Крафт сливы",
   						"CraftComponents": [
-  						{
-  							"Classname": "Apple",
-  							"Amount": 1,
-  							"Destroy": 1,
-  							"Changehealth": 0
-  						}
-  							],
+	  						{
+	  							"Classname": "Apple",
+	  							"Amount": 1,
+	  							"Destroy": 1,
+	  							"Changehealth": 0
+	  						}
+						],
   						"AttachmentsNeed": [
   												
   						]
