@@ -524,6 +524,7 @@
 
 - **`perkID`**: `int` ID перка.
 - **`lightCoef`**: `float` Коэфицент света который будет увеличен при активированном перке. По умолчанию в игре 1. Чем больше, тем светлее будет ночь.
+- **`lightCoefInUndergroundTrigger`**: `float` Коэфицент света который будет увеличен при активированном перке в ванильных зонах затемнения. Чем больше, тем светлее будет в зоне. Но стоит учесть что в конфиге затемнения  EyeAccommodation не может быть равен 0, так как при умножении на 0, как мы знаем ничего не изменится. Ставьте значение ближе к нулю, чтобы было темно, но чтобы перки могли на это влиять.
 - **`timeToPerCatEyeActive`**: `int [4]` Время активация перка кошачьи глазки. Первые два числа, это Начало час:мин, вторые два числа это окончание час:мин. С текущими настройками перк включится в промежутке 20:30 по 4:30
 
 ```json
@@ -531,19 +532,23 @@
     "CatEyePerkConfigList": [
         {
             "perkID": 97,
-            "lightCoef": 1.5
+            "lightCoef": 1.5,
+            "lightCoefInUndergroundTrigger": 4.2
         },
         {
             "perkID": 98,
-            "lightCoef": 2.5
+            "lightCoef": 2.5,
+            "lightCoefInUndergroundTrigger": 2.5
         },
         {
             "perkID": 99,
-            "lightCoef": 3.5
+            "lightCoef": 3.5,
+            "lightCoefInUndergroundTrigger": 3.5
         },
         {
             "perkID": 108,
-            "lightCoef": 4.199999809265137
+            "lightCoef": 4.199999809265137,
+            "lightCoefInUndergroundTrigger": 4.2
         }
     ],
     "timeToPerCatEyeActive": [
