@@ -1,4 +1,4 @@
-# Описание настроек мода перков для сторонних модов которые хроанятся в конфигах этих модов.
+# Описание настроек мода перков для сторонних модов которые хранятся в конфигах этих модов.
 
 ### COTZ_Workbench https://steamcommunity.com/sharedfiles/filedetails/?id=2895049000 
 ### HP_Crafter https://steamcommunity.com/sharedfiles/filedetails/?id=3133007745. 
