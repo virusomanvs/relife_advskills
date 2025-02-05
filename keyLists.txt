@@ -1,0 +1,126 @@
+KC_ESCAPE – Escape
+KC_1 – 1
+KC_2 – 2
+KC_3 – 3
+KC_4 – 4
+KC_5 – 5
+KC_6 – 6
+KC_7 – 7
+KC_8 – 8
+KC_9 – 9
+KC_0 – 0
+KC_MINUS – "-" на основной клавиатуре
+KC_EQUALS – "="
+KC_BACK – Backspace
+KC_TAB – Tab
+KC_Q – Q
+KC_W – W
+KC_E – E
+KC_R – R
+KC_T – T
+KC_Y – Y
+KC_U – U
+KC_I – I
+KC_O – O
+KC_P – P
+KC_LBRACKET – [
+KC_RBRACKET – ]
+KC_RETURN – Enter (основная клавиатура)
+KC_LCONTROL – Левый Ctrl
+KC_A – A
+KC_S – S
+KC_D – D
+KC_F – F
+KC_G – G
+KC_H – H
+KC_J – J
+KC_K – K
+KC_L – L
+KC_SEMICOLON – ;
+KC_APOSTROPHE – '
+KC_GRAVE – ` (акцент)
+KC_LSHIFT – Левый Shift
+KC_BACKSLASH – \
+KC_Z – Z
+KC_X – X
+KC_C – C
+KC_V – V
+KC_B – B
+KC_N – N
+KC_M – M
+KC_COMMA – ,
+KC_PERIOD – . (основная клавиатура)
+KC_SLASH – / (основная клавиатура)
+KC_RSHIFT – Правый Shift
+KC_MULTIPLY – * (на цифровой клавиатуре)
+KC_LMENU – Левый Alt
+KC_SPACE – Пробел
+KC_CAPITAL – Caps Lock
+KC_F1 – F1
+KC_F2 – F2
+KC_F3 – F3
+KC_F4 – F4
+KC_F5 – F5
+KC_F6 – F6
+KC_F7 – F7
+KC_F8 – F8
+KC_F9 – F9
+KC_F10 – F10
+KC_NUMLOCK – Num Lock
+KC_SCROLL – Scroll Lock
+KC_NUMPAD7 – 7 (на цифровой клавиатуре)
+KC_NUMPAD8 – 8 (на цифровой клавиатуре)
+KC_NUMPAD9 – 9 (на цифровой клавиатуре)
+KC_SUBTRACT – - (на цифровой клавиатуре)
+KC_NUMPAD4 – 4 (на цифровой клавиатуре)
+KC_NUMPAD5 – 5 (на цифровой клавиатуре)
+KC_NUMPAD6 – 6 (на цифровой клавиатуре)
+KC_ADD – + (на цифровой клавиатуре)
+KC_NUMPAD1 – 1 (на цифровой клавиатуре)
+KC_NUMPAD2 – 2 (на цифровой клавиатуре)
+KC_NUMPAD3 – 3 (на цифровой клавиатуре)
+KC_NUMPAD0 – 0 (на цифровой клавиатуре)
+KC_DECIMAL – . (на цифровой клавиатуре)
+KC_OEM_102 – < > | (на UK/немецких клавиатурах)
+KC_F11 – F11
+KC_F12 – F12
+KC_NUMPADEQUALS – = (на цифровой клавиатуре)
+KC_PREVTRACK – Предыдущий трек
+KC_AT – @ (NEC PC98)
+KC_COLON – : (NEC PC98)
+KC_UNDERLINE – _ (NEC PC98)
+KC_STOP – Остановить (NEC PC98)
+KC_AX – (Japan AX)
+KC_UNLABELED – (J3100)
+KC_NEXTTRACK – Следующий трек
+KC_NUMPADENTER – Enter (на цифровой клавиатуре)
+KC_RCONTROL – Правый Ctrl
+KC_MUTE – Отключить звук
+KC_CALCULATOR – Калькулятор
+KC_PLAYPAUSE – Воспроизведение/Пауза
+KC_MEDIASTOP – Остановить медиа
+KC_VOLUMEDOWN – Уменьшить громкость
+KC_VOLUMEUP – Увеличить громкость
+KC_WEBHOME – Домашняя страница в браузере
+KC_NUMPADCOMMA – , (на цифровой клавиатуре)
+KC_DIVIDE – / (на цифровой клавиатуре)
+KC_SYSRQ – Print Screen
+KC_RMENU – Правый Alt
+KC_PAUSE – Pause
+KC_HOME – Home
+KC_UP – Стрелка вверх
+KC_PRIOR – Page Up
+KC_LEFT – Стрелка влево
+KC_RIGHT – Стрелка вправо
+KC_END – End
+KC_DOWN – Стрелка вниз
+KC_NEXT – Page Down
+KC_INSERT – Insert
+KC_DELETE – Delete
+KC_LWIN – Левая клавиша Windows
+KC_RWIN – Правая клавиша Windows
+KC_APPS – Меню приложений
+KC_POWER – Включение системы
+KC_SLEEP – Спящий режим
+KC_WAKE – Пробуждение
+KC_MEDIASELECT – Выбор мультимедиа
