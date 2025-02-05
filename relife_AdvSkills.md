@@ -31,7 +31,7 @@
 - **`enableDefaultWeaponRecord`**:  `bool` Включить тряску оружия для всех видов используя параметр DefaultWeapon.
 - **`DefaultSkinningTime`**: `float` Первоначальная скорость разделки животных без перков.
 - **`PerkAdminKeyKeyCode`**: `string` Имя кнопки для открытия админки, кнопка из настроек также будет активна.
-- **`PerksAdminSteamID`**: `TStringArray` массив строк STEAMID где написаны админы перков у которых будет отображена дополнительная информация ID перков, а также будет доступна админ панель.
+- **`PerksAdminSteamID`**: `TStringArray` массив строк STEAMID где написаны админы перков у которых будет отображена дополнительная информация ID перков, а также будет доступна админ панель. Список кнопок можно узнать здесь https://github.com/virusomanvs/relife_advskills/blob/main/keyLists.txt
 ```json
 {
     "PerkAdminKeyKeyCode": "KC_NUMPAD1",
