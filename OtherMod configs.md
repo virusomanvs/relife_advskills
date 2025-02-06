@@ -2,6 +2,8 @@
 
 ### COTZ_Workbench https://steamcommunity.com/sharedfiles/filedetails/?id=2895049000 
 ### HP_Crafter https://steamcommunity.com/sharedfiles/filedetails/?id=3133007745. 
+### BP_WORKBENCH от Beliy, Kastet
+
 ### ТОЛЬКО ДЛЯ ЭТИХ МОДОВ
 Вы можете настроить блокировку крафта в верстаке, если не активирован перк, достаточно в конфиг крафта добавить дополнительные параметры.
 
