@@ -45,6 +45,7 @@
 - **`EnablePerkIDDebug`**: `bool` Включает вывод ID перка рядом с его названием
 - **`EnableSkinningDefaultSettingAnimal`**: `bool` Включает наследование всех животных с класса AnimalBase если их класса нет в конфиге config_EntityLists.json
 - **`EnableSkinningDefaultSettingsZombie`**: `bool` Включает наследование всех зараженных с класса ZombieBase если их класса нет в конфиге config_EntityLists.json
+- **`ShowNotifyNewPerks`**: `bool` Включает уведомление игроку, когда у него доступно новое умение которое можно активировать.
 ## Добавление опыта ОХОТНИКА игроку при стрельбе из оружия.
 
 
