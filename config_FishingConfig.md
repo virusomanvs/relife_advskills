@@ -118,7 +118,7 @@
 - **`zonePosition`**: `vector` Центр зоны. 
 - **`zoneRadius`**: `float` Радиус зоны. 
 - **`showNotifyIfNotItems`**: `bool` Показывать уведомление о том что невозможно рыбачить. Если выключить, а в allowItemIDs нет ничего, то рыбалка будет возможна, но рыбы или предметов не будет.
-- **`allowItemIDs`**: `map` Список ID для рыбы или предметов, не перепутайте категории!
+- **`allowItemIDs`**: `TIntArray` Список ID для рыбы или предметов, не перепутайте категории!
 
 ```json
 {
@@ -133,22 +133,20 @@
             ],
             "showNotifyIfNotItems": 1,
             "zoneRadius": 100,
-            "allowItemIDs": {
-                "pond": [
-                    2
-                ],
-                "usefull": [
-                    103,
-                    104
-                ],
-                "sea": [
-                    1
-                ],
-                "trash": [
-                    402,
-                    403
-                ]
-            }
+            "allowItemPondIDs": [
+                2
+            ],
+            "allowItemUsefullIDs": [
+                103,
+                104
+            ],
+            "allowItemSeaIDs": [
+                1
+            ],
+            "allowItemTrashIDs": [
+                402,
+                403
+            ]
         }
     ]
 }
