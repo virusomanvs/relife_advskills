@@ -144,4 +144,5 @@
 - **`Endurance_Per_Meter`**: `float` Начисление опыта при пройденном растоянии за каждый метр.
 - **`Endurance_Per_Full_Stamina_Melee`**: `float` Начисление опыта при ударах в рукопашном бою.
 - **`Endurance_Per_Jump`**: `float` Начисление опыта за каждый прыжок.
+- **`DisableAddPointsIfEpinephrine`**: `bool` Начисление опыта если использован MDF_EPINEPHRINE.
 
