@@ -165,7 +165,7 @@
 - **`FishingPondFishTypes`**: `array` Список пресной рыбы.
 - **`FishingGoodItemTypes`**: `array` Список полезных предметов.
 - **`FishingTrashItemTypes`**: `array` Список бесполезных предметов.
-### Памятка! Учитывая шансы и удочки, в массиве всегда должен быть предмет который будет выдан в случае если все шансы не сработают. Его необходимо разместить в конце массива. Можете добавить туда бумагу либо палку. Вы не моежете оставить FishingSeaFishTypes FishingPondFishTypes FishingGoodItemTypes FishingTrashItemTypes пустыми!
+### Памятка! Учитывая шансы и удочки, в массиве всегда должен быть предмет который будет выдан в случае если все шансы не сработают. Его необходимо разместить в конце массива. Можете добавить туда бумагу либо палку. Вы не можете оставить FishingSeaFishTypes FishingPondFishTypes FishingGoodItemTypes FishingTrashItemTypes пустыми!
 - **`itemFishID`**: `int` Уникальное ID для рыбы, предмета.
 ВНИМАНИЕ! ID во всех массивах FishingSeaFishTypes FishingPondFishTypes FishingGoodItemTypes FishingTrashItemTypes не должны повторяться и должны быть уникальными.
 - **`className`**: `string` Класснейм рыбы.
