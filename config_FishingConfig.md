@@ -45,7 +45,7 @@
 ```
 ## FishingPerkConfig - Список различных параметров и шансов связанных с рыбалкой.
 
-- **`FishSkinningToolDamageDefault`**: `float` Урон инструменту при разделке по умолчанию. Просто значение без каких-либо знаков.
+- **`FishSkinningToolDamageDefault`**: `float` Урон инструменту при разделке по умолчанию. 
 - **`DigWormMoreChance`**: `float` Шанс выкопать дополнительного червя при активированном перке. (Больше не актуально, настройки в relife_PerksConfig.json)
 - **`FishchanceToCatchPond_Default`**: `float` Шанс поймать что либо в озере, без вкачаных перков.
 - **`FishchanceToCatchSea_Default`**: `float` Шанс поймать что либо в море, без вкачаных перков.
