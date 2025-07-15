@@ -57,7 +57,6 @@
 - **`IsNightBonus_NoPerk`**: `float` Бонус при рыбалке ночью, без вкачаных перков.
 - **`FishingRainBonus_NoPerk`**: `float` Бонус при рыбалке в дождь, без вкачаных перков.
 - **`FishingGarbageChance_Default`**: `float` Шанс на поимку мусора, без вкачаных перков.
-- **`FishSkinningToolDamageDefault`**: `float` Урон ножу при разделке рыбы.
 - **`FishingHookLoss_Default`**: `float` Шанс потери крючка при рыбалке без вкачанных перков.
 - **`FishingLostFishChance`**: `float` Шанс срыва рыбы.
 - **`FishingRepeatChance`**: `float` Шанс прокрута действия рыбалки, для более длительной рыбалки и более тонкой настройки.
