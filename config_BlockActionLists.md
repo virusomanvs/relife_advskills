@@ -57,24 +57,6 @@ isWhitelist = false → перк не нужен для предметов из 
 ```
 Действие требует активного перка независимо от предмета в руках.
 
-```json
-[
-    {
-        "actionName": "ActionLockDoors",
-        "neededPerkID": 133,
-        "useIsKindOf": 0,
-        "isWhitelist": 0,
-        "itemInHandsList": []
-    },
-    {
-        "actionName": "ActionUnlockDoors",
-        "neededPerkID": 133,
-        "useIsKindOf": 0,
-        "isWhitelist": 0,
-        "itemInHandsList": []
-    }
-]
-```
 ВНИМАНИЕ! Ваш экшен должен наследовать ActionConditionContinue иначе блок не будет работать. Чтобы у вас работал блок для модовых экшенов, там где есть свой ActionConditionContinue. Просто переопределите его
 
 ```C#
