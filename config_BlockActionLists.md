@@ -22,9 +22,7 @@ isWhitelist = false → перк не нужен для предметов из 
 
 ✅ Примеры
 ✅ Пример 1: Перк требуется только для топоров
-json
-Копировать
-Редактировать
+```json
 {
   "actionName": "ActionChopTree",
   "neededPerkID": 1,
@@ -32,12 +30,11 @@ json
   "useIsKindOf": true,
   "itemInHandsList": ["Axe"]
 }
+```
 Перк ID 1 нужен только если в руках предмет, унаследованный от Axe.
 
 ✅ Пример 2: Перк не требуется при использовании ножей
-json
-Копировать
-Редактировать
+```json
 {
   "actionName": "ActionDigGardenPlot",
   "neededPerkID": 2,
@@ -45,12 +42,11 @@ json
   "useIsKindOf": true,
   "itemInHandsList": ["Knife"]
 }
+```
 Перк ID 2 нужен для всех предметов, кроме ножей.
 
 ✅ Пример 3: Перк нужен для всех предметов (список пуст)
-json
-Копировать
-Редактировать
+```json
 {
   "actionName": "ActionBuildPart",
   "neededPerkID": 3,
@@ -58,6 +54,7 @@ json
   "useIsKindOf": false,
   "itemInHandsList": []
 }
+```
 Действие требует активного перка независимо от предмета в руках.
 
 ```json
