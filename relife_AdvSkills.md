@@ -28,7 +28,7 @@
 
 - **`StartingPointsForAll`**:  `float` Стартовое значения опыта, если в параметрах типа навыка не указано начальное значение.
 - **`PointsDecreaseAfterDeathForAll`**:  `float` Значение от 0.0 до 1.0 на сколько в процентах уменьшится опыт, если в параметрах типа навыка не указано начальное значение.
-- **`enableDefaultWeaponRecord`**:  `bool` Включить тряску оружия для всех видов используя параметр DefaultWeapon.
+- **`enableDefaultWeaponRecord`**:  `bool` Включает наследуемость классов в конфиге config_WeaponShakeLists.json. То есть если enableDefaultWeaponRecord включен для всех оружий будет применена запись с их родительским классом, а для тех что в этом списке, будет искаться следующий параметр.
 - **`DefaultSkinningTime`**: `float` Первоначальная скорость разделки животных без перков.
 - **`PerkAdminKeyKeyCode`**: `string` Имя кнопки для открытия админки, кнопка из настроек также будет активна.
 - **`PerksAdminSteamID`**: `TStringArray` массив строк STEAMID где написаны админы перков у которых будет отображена дополнительная информация ID перков, а также будет доступна админ панель. Список кнопок можно узнать здесь https://github.com/virusomanvs/relife_advskills/blob/main/keyLists.txt
