@@ -4,6 +4,7 @@
 - **`defaultSpeed`**: `float` Настройки скорости по умолчанию.
 - **`defaultWeight`**: `float` Настройки веса по умолчанию.
 - **`perkCoefEnable`**: `bool` Включить влияние перков на тряску оружия.
+- **`ignoredKindOfClassName`**: `array` Игнорировать эти классы для этой настройки
 ### perkCoefList
 - **`enableCoef`**: `bool` Включить влияние перка на тряску оружия.
 - **`perkID`**: `int` ID перка.
@@ -16,6 +17,9 @@
         "defaultSpeed": 1.0,
         "defaultWeight": 2.0,
         "perkCoefEnable": 1,
+        "ignoredKindOfClassName": [
+            "IgnoredClass"
+        ],
         "perkCoefList": [
             {
                 "enableCoef": 1,
