@@ -14,7 +14,12 @@
 ```json
 [
     {
-        "weaponClassname": "DefaultWeapon",
+        "weaponClassname": "",
+        "arrayWeaponClassname": [
+            "АКМ",
+            "Other",
+            "More"
+        ],
         "defaultSpeed": 1.0,
         "defaultWeight": 2.0,
         "perkCoefEnable": 1,
