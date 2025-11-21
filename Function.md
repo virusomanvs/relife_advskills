@@ -1,7 +1,7 @@
 ## class PlayerBase
 
 Возвращает активен ли перк
-**`bool IsPerkActive(int perkID)`**
+```bool IsPerkActive(int perkID)```
 
 Добавляет опыт игроку (СЕРВЕР)
 ```C#
